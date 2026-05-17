@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stationery Store</title>
+    <style>
+        /* CSS Reset & Basic Setup */
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f9f9f9; color: #333; }
+        
+        /* Header */
+        header { background: #fff; padding: 20px; text-align: center; border-bottom: 1px solid #eee; }
+        header h1 { color: #2c3e50; }
+
+        /* Product Grid */
+        .catalog-container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 30px; }
+        
+        /* Product Card */
+        .card { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.05); cursor: pointer; transition: transform 0.2s; }
+        .card:hover { transform: translateY(-5px); }
+        .card-image { width: 100%; height: 250px; background-color: #ddd; display: flex; align-items: center; justify-content: center; color: #888; }
+        .card-info { padding: 15px; text-align: center; }
+        .card-title { font-size: 1.1em; margin-bottom: 10px; }
+        .card-price { font-weight: bold; color: #27ae60; font-size: 1.2em; }
+
+        /* Modal Overlay */
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); display: none; align-items: center; justify-content: center; z-index: 1000; }
+        .modal-overlay.active { display: flex; }
+        
+        /* Modal Content */
+        .modal-content { background: #fff; width: 90%; max-width: 500px; border-radius: 12px; padding: 20px; position: relative; }
+        .close-btn { position: absolute; top: 15px; right: 15px; background: none; border: none; font-size: 1.5em; cursor: pointer; color: #666; z-index: 10; }
+        
+        /* Carousel Container */
+        .carousel-container { position: relative; width: 100%; height: 300px; margin-bottom: 15px; }
+        .carousel-view { width: 100%; height: 100%; background-color: #ccc; border-radius: 8px; transition: background-color 0.3s; }
+        
+        /* Carousel Navigation Arrows */
+        .nav-arrow { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255, 255, 255, 0.7); border: none; width: 40px; height: 40px; border-radius: 50%; font-size: 1.2em; font-weight: bold; cursor: pointer; color: #333; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 5px rgba(0,0,0,0.2); transition: background 0.2s; }
+        .nav-arrow:hover { background: rgba(255, 255, 255, 0.9); }
+        .prev-btn { left: 10px; }
+        .next-btn { right: 10px; }
+
+        /* Carousel Navigation Dots */
+        .carousel-controls { display: flex; justify-content: center; gap: 10px; margin-bottom: 20px; }
+        .dot { width: 15px; height: 15px; border-radius: 50%; background: #ddd; cursor: pointer; }
+        .dot.active { background: #333; }
+
+        /* WhatsApp Button */
+        .whatsapp-btn { display: block; width: 100%; padding: 15px; background: #25D366; color: white; text-align: center; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 1.1em; }
+        .whatsapp-btn:hover { background: #128C7E; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Stationery Store</h1>
+        <p>Premium office and school supplies</p>
+    </header>
+
+    <main class="catalog-container">
+        <div class="grid" id="productGrid">
+            </div>
+    </main>
+
+    <div class="modal-overlay" id="productModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeModal">&times;</button>
+            <h2 id="modalTitle" style="margin-bottom: 15px; padding-right: 25px;">Product Name</h2>
+            
+            <div class="carousel-container">
+                <button class="nav-arrow prev-btn" id="prevImageBtn">&lt;</button>
+                <div class="carousel-view" id="carouselMainImage"></div>
+                <button class="nav-arrow next-btn" id="nextImageBtn">&gt;</button>
+            </div>
+
+            <div class="carousel-controls" id="carouselDots">
+                </div>
+
+            <p id="modalPrice" style="font-size: 1.4em; color: #27ae60; font-weight: bold; margin-bottom: 20px; text-align: center;">R$ 0,00</p>
+            
+            <a href="#" class="whatsapp-btn" id="whatsappLink" target="_blank">
+                Comprar pelo WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <script>
+        const STORE_PHONE = "5519953321385"; 
+
+        const products = [
+            {
+                id: 1,
+                name: "Caderno Universitário Capa Dura",
+                price: 25.90,
+                images: ["#FF9999", "#FF6666", "#FF3333"] 
+            },
+            {
+                id: 2,
+                name: "Kit Canetas Esferográficas 4 Cores",
+                price: 12.50,
+                images: ["#99CCFF", "#66B2FF"]
+            },
+            {
+                id: 3,
+                name: "Estojo Escolar Duplo",
+                price: 34.00,
+                images: ["#99FF99", "#66FF66", "#33FF33", "#00FF00"]
+            },
+            {
+                id: 4,
+                name: "Agenda Planner 2027",
+                price: 45.00,
+                images: ["#FFCC99"]
+            }
+        ];
+
+        // DOM Elements
+        const gridContainer = document.getElementById('productGrid');
+        const modal = document.getElementById('productModal');
+        const closeModalBtn = document.getElementById('closeModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalPrice = document.getElementById('modalPrice');
+        const carouselMainImage = document.getElementById('carouselMainImage');
+        const carouselDotsContainer = document.getElementById('carouselDots');
+        const whatsappLink = document.getElementById('whatsappLink');
+        const prevImageBtn = document.getElementById('prevImageBtn');
+        const nextImageBtn = document.getElementById('nextImageBtn');
+
+        let currentImageIndex = 0;
+        let activeProduct = null;
+
+        // 1. Render Product Grid
+        function renderGrid() {
+            gridContainer.innerHTML = ''; 
+            products.forEach(product => {
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.onclick = () => openModal(product);
+
+                card.innerHTML = `
+                    <div class="card-image" style="background-color: ${product.images[0]}"></div>
+                    <div class="card-info">
+                        <h3 class="card-title">${product.name}</h3>
+                        <p class="card-price">R$ ${product.price.toFixed(2).replace('.', ',')}</p>
+                    </div>
+                `;
+                gridContainer.appendChild(card);
+            });
+        }
+
+        // 2. Open Modal & Populate Data
+        function openModal(product) {
+            activeProduct = product;
+            currentImageIndex = 0;
+            
+            const formattedPrice = `R$ ${product.price.toFixed(2).replace('.', ',')}`;
+            modalTitle.innerText = product.name;
+            modalPrice.innerText = formattedPrice;
+            
+            const message = `Olá! Gostaria de saber mais sobre o produto: *${product.name}* (${formattedPrice})`;
+            const encodedMessage = encodeURIComponent(message);
+            whatsappLink.href = `https://wa.me/${STORE_PHONE}?text=${encodedMessage}`;
+
+            renderCarousel();
+            modal.classList.add('active');
+        }
+
+        // 3. Carousel Rendering Logic
+        function renderCarousel() {
+            carouselMainImage.style.backgroundColor = activeProduct.images[currentImageIndex];
+            
+            // Hide arrows entirely if there is only 1 image
+            if (activeProduct.images.length <= 1) {
+                prevImageBtn.style.display = 'none';
+                nextImageBtn.style.display = 'none';
+            } else {
+                prevImageBtn.style.display = 'flex';
+                nextImageBtn.style.display = 'flex';
+            }
+
+            // Render navigation dots
+            carouselDotsContainer.innerHTML = '';
+            if (activeProduct.images.length > 1) {
+                activeProduct.images.forEach((img, index) => {
+                    const dot = document.createElement('div');
+                    dot.className = `dot ${index === currentImageIndex ? 'active' : ''}`;
+                    dot.onclick = (e) => {
+                        e.stopPropagation();
+                        currentImageIndex = index;
+                        renderCarousel(); 
+                    }
+                    carouselDotsContainer.appendChild(dot);
+                });
+            }
+        }
+
+        // 4. Directional Shift Controls
+        function changeImage(direction) {
+            if (!activeProduct) return;
+            
+            const totalImages = activeProduct.images.length;
+            
+            // Increment or Decrement index with safe looping limits
+            currentImageIndex += direction;
+            
+            if (currentImageIndex >= totalImages) {
+                currentImageIndex = 0; // Wrap around to first image
+            } else if (currentImageIndex < 0) {
+                currentImageIndex = totalImages - 1; // Wrap around to last image
+            }
+            
+            renderCarousel();
+        }
+
+        // Event listeners for arrow actions
+        prevImageBtn.onclick = (e) => { e.stopPropagation(); changeImage(-1); };
+        nextImageBtn.onclick = (e) => { e.stopPropagation(); changeImage(1); };
+
+        // 5. Close Modal Logic
+        closeModalBtn.onclick = () => modal.classList.remove('active');
+        
+        modal.onclick = (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+            }
+        }
+
+        // Initialize the page
+        renderGrid();
+    </script>
+</body>
+</html>
