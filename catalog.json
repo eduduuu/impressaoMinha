@@ -1,0 +1,118 @@
+{
+  "themeTitle": "Dia Dos Namorados",
+  "heroCarouselImages": [
+    "https://lh3.googleusercontent.com/d/1noNpG03HibSmDt2Vw17PMC3wzlP88xGv",
+    "https://lh3.googleusercontent.com/d/1S3TBwn7wzAowrRoBfeeX0fn3g-f8slQL",
+    "https://lh3.googleusercontent.com/d/12fBnELf6r_p1S71Hv6xZCTd5Xew219O4"
+  ],
+  "featuredThemeProducts": [
+    {
+      "name": "Polaroid_1",
+      "price": 3,
+      "images": [
+        "https:",
+        "https://lh3.googleusercontent.com/d/1noNpG03HibSmDt2Vw17PMC3wzlP88xGv"
+      ],
+      "originalCategory": "Polaroids"
+    },
+    {
+      "name": "Quadro_3",
+      "price": 6,
+      "images": [
+        "https://lh3.googleusercontent.com/d/1Sbwq-KGv47vHx0uHX_88DDkFIxe4_aQG",
+        "https://lh3.googleusercontent.com/d/1e7SpwXUpoi8VKGAddYqXp22e3u9VsOzY",
+        "https://lh3.googleusercontent.com/d/1o-eqNevdcLCOnb9q8RIT1Gg-YIXm5DTT"
+      ],
+      "originalCategory": "Quadros"
+    }
+  ],
+  "catalog": [
+    {
+      "categoryTitle": "Figurinhas",
+      "items": [
+        {
+          "name": "Figurinhas_2",
+          "price": 1,
+          "images": [
+            "https://lh3.googleusercontent.com/d/1byYQE9sls740Ug20NqRmqEFQVTZXXo8s",
+            "https://lh3.googleusercontent.com/d/1S3TBwn7wzAowrRoBfeeX0fn3g-f8slQL",
+            "https://lh3.googleusercontent.com/d/1Y7d5-xEeT0oWULZ7qNTuLpYyoLZgqPfl"
+          ]
+        },
+        {
+          "name": "Figurinhas_1",
+          "price": 2,
+          "images": [
+            "https://lh3.googleusercontent.com/d/1CGhqu1y-ZfuRnF9A8p-UFZK4DjtBG8W0",
+            "https://lh3.googleusercontent.com/d/12fBnELf6r_p1S71Hv6xZCTd5Xew219O4",
+            "https://lh3.googleusercontent.com/d/15dq-FKiVTBh730SZXv0udzNMW-SEuXdI"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryTitle": "Polaroids",
+      "items": [
+        {
+          "name": "Polaroid_1",
+          "price": 3,
+          "images": [
+            "https://lh3.googleusercontent.com/d/1l8DExXm1v8WWi5BUL3cyHXV38h3c-Joc",
+            "https://lh3.googleusercontent.com/d/1noNpG03HibSmDt2Vw17PMC3wzlP88xGv"
+          ]
+        },
+        {
+          "name": "Polaroid_3",
+          "price": 4,
+          "images": [
+            "https://lh3.googleusercontent.com/d/1DL8M9m2ykZDtg0XccKXDHoGTgyyISBJT",
+            "https://lh3.googleusercontent.com/d/1HxOC71b-QCt93clnW9jmUzUN5Y5e8Gtt",
+            "https://lh3.googleusercontent.com/d/1f7JRRDNR15Uax0p7xgQQMcpsiwkLGduC"
+          ]
+        },
+        {
+          "name": "Polaroid_2",
+          "price": 5,
+          "images": [
+            "https://lh3.googleusercontent.com/d/1SNFwk4NeWXnWceWDc4_ofq9Rb5KCTtOk",
+            "https://lh3.googleusercontent.com/d/1NQXXl--Cd50PYgCo-il7NbaiHJbN2kwP",
+            "https://lh3.googleusercontent.com/d/1pr9WzsRXATDu0lfy0I2d063kU786ye34"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryTitle": "Quadros",
+      "items": [
+        {
+          "name": "Quadro_3",
+          "price": 6,
+          "images": [
+            "https://lh3.googleusercontent.com/d/1Sbwq-KGv47vHx0uHX_88DDkFIxe4_aQG",
+            "https://lh3.googleusercontent.com/d/1e7SpwXUpoi8VKGAddYqXp22e3u9VsOzY",
+            "https://lh3.googleusercontent.com/d/1o-eqNevdcLCOnb9q8RIT1Gg-YIXm5DTT"
+          ]
+        },
+        {
+          "name": "Quadro_2",
+          "price": 7,
+          "images": [
+            "https://lh3.googleusercontent.com/d/1YXqD5tUSa5glN-LVdfNQHFhC1grFAAuc",
+            "https://lh3.googleusercontent.com/d/1KxH51vlUcVvTpKkpv7HVUvS9gsALpSdZ",
+            "https://lh3.googleusercontent.com/d/1J7hswe_te81JoaGSpVfYqDZ-4QCSqdc9",
+            "https://lh3.googleusercontent.com/d/1AgpHDPp62atGYYN05ZDDqcc-1kJ2bNzY"
+          ]
+        },
+        {
+          "name": "Quadro_1",
+          "price": 8,
+          "images": [
+            "https://lh3.googleusercontent.com/d/13Q1cIOubQ8UO8WJqS9AFaUArDwVk7qwa",
+            "https://lh3.googleusercontent.com/d/13GDdYqH_WmNQAogMYx0ezAWbFOVyd5ro",
+            "https://lh3.googleusercontent.com/d/1g-12dUXWzVmiZqD2otNeXJJGoZwnkkd-"
+          ]
+        }
+      ]
+    }
+  ]
+}
