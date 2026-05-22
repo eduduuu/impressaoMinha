@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impressão Minha - Especial de Namorados</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
     <style>
         :root {
             --primary-burgundy: #7a1b32; 
@@ -21,7 +22,8 @@
             background-color: var(--bg-light); 
             color: var(--text-dark);
             -webkit-tap-highlight-color: transparent;
-            padding-bottom: 70px; 
+            /* Aumentado o padding-bottom para dar espaço ao footer + botão fixo no mobile */
+            padding-bottom: 80px; 
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             font-size: 0.95rem; 
         }
@@ -266,6 +268,51 @@
             border-top: 1px solid var(--border-soft);
         }
 
+        /* --- CUSTOM BUSINESS FOOTER --- */
+        .custom-footer {
+            background-color: var(--primary-burgundy);
+            color: #ffffff;
+            padding: 40px 0 20px 0;
+            margin-top: 50px;
+        }
+        .custom-footer a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        .custom-footer a:hover {
+            color: var(--secondary-pink);
+        }
+        .footer-logo {
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        .footer-about {
+            font-size: 0.88rem;
+            color: rgba(255, 255, 255, 0.75);
+            line-height: 1.6;
+        }
+        .footer-contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+            font-size: 0.9rem;
+        }
+        .footer-contact-item i {
+            font-size: 1.1rem;
+            color: var(--secondary-pink);
+        }
+        .footer-divider {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin: 30px 0 15px 0;
+        }
+        .footer-credits {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
         /* --- BADGES & BUTTONS --- */
         .variation-badge { 
             padding: 6px 14px; 
@@ -368,8 +415,10 @@
             object-fit: contain; /* Garante que a imagem apareça inteira, sem cortes bizarros */
         }
         /* Desktop UI Scaling */
-        /* Desktop UI Scaling */
         @media (min-width: 992px) {
+            body {
+                padding-bottom: 0px; /* Remove o padding extra no desktop já que não há botão fixo */
+            }
             header {
                 background: var(--primary-burgundy) !important;
                 height: 85px;
@@ -384,7 +433,6 @@
             main.container-fluid {
                 margin-top: 75px !important; 
             }
-            /* ... mantenha o restante das regras do media query iguais ... */
             .carousel-item img { height: 250px; }
             .hero-view { min-height: 110px; font-size: 1.1em; }
             .amazon-box-title { font-size: 1.25em; }
@@ -396,6 +444,9 @@
             .card-title-custom { font-size: 0.95em; }
             .card-price { font-size: 1.05em; }
             .category-view-grid { grid-template-columns: repeat(4, 1fr); }
+            
+            /* Esconde a barra fixa do whatsapp em telas grandes */
+            .sticky-footer { display: none; }
         }
     </style>
 </head>
@@ -460,6 +511,45 @@
                 <div class="col-12" id="categoryContainer"></div>
             </div>
         </main>
+
+        <footer class="custom-footer">
+            <div class="container-lg px-4">
+                <div class="row g-4">
+                    <div class="col-12 col-md-6">
+                        <h4 class="footer-logo mb-3">Impressão Minha</h4>
+                        <p class="footer-about">
+                            Especialistas em eternizar momentos através de presentes personalizados e papelaria criativa de alta qualidade. Criamos conexões únicas e memórias inesquecíveis para quem você ama.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h4 class="h6 fw-bold mb-3 text-uppercase" style="letter-spacing: 1px; color: var(--secondary-pink);">Atendimento & Contato</h4>
+                        
+                        <div class="footer-contact-item">
+                            <i class="bi bi-whatsapp"></i>
+                            <a href="https://wa.me/5519990030798" target="_blank">(19) 99003-0798</a>
+                        </div>
+                        
+                        <div class="footer-contact-item">
+                            <i class="bi bi-envelope"></i>
+                            <a href="mailto:equipe.impressaominha@gmail.com">equipe.impressaominha@gmail.com</a>
+                        </div>
+                        
+                        <div class="footer-contact-item">
+                            <i class="bi bi-instagram"></i>
+                            <a href="https://instagram.com/impressao.minha_" target="_blank">@impressao.minha_</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-divider"></div>
+                
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p class="footer-credits mb-0">© 2026 Impressão Minha. Todos os direitos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
     <div id="categoryTab" class="view-tab">
@@ -476,7 +566,7 @@
 
     <div class="sticky-footer">
         <div class="container-lg p-0">
-            <a href="https://wa.me/5519953321385?text=Olá! Gostaria de tirar uma dúvida sobre os produtos." 
+            <a href="https://wa.me/5519990030798?text=Olá! Gostaria de tirar uma dúvida sobre os produtos." 
                class="whatsapp-btn" target="_blank">
                 💬 Contate pelo Whatsapp
             </a>
@@ -528,7 +618,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        const STORE_PHONE = "5519953321385"; 
+        const STORE_PHONE = "5519990030798"; 
         const JSON_URL = 'catalog.json'; 
 
         let database = {
@@ -595,9 +685,8 @@
                     innerContainer.appendChild(itemDiv);
                 });
 
-                // --- NEW: Force Bootstrap to recognize the new slides ---
                 const myCarousel = new bootstrap.Carousel(carousel, {
-                    interval: 3000, // Changes every 3 seconds
+                    interval: 3000, 
                     ride: 'carousel'
                 });
             } else {
