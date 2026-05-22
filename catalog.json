@@ -1,115 +1,269 @@
 {
-  "themeTitle": "Dia Dos Namorados",
-  "heroCarouselImages": [
-    "https://lh3.googleusercontent.com/d/1noNpG03HibSmDt2Vw17PMC3wzlP88xGv",
-    "https://lh3.googleusercontent.com/d/1S3TBwn7wzAowrRoBfeeX0fn3g-f8slQL",
-    "https://lh3.googleusercontent.com/d/12fBnELf6r_p1S71Hv6xZCTd5Xew219O4"
-  ],
-  "featuredThemeProducts": [
+  "themeTitle": "Tema",
+  "carousel": [
     {
-      "name": "Polaroid_1",
-      "price": 3,
-      "images": [
-        "https:",
-        "https://lh3.googleusercontent.com/d/1noNpG03HibSmDt2Vw17PMC3wzlP88xGv"
-      ],
-      "originalCategory": "Polaroids"
+      "position": 1,
+      "categoryTarget": "Fotos",
+      "url": "https://lh3.googleusercontent.com/d/128R7081DWqqI4zEvTMQDhfgXhss6Ptfs"
     },
     {
-      "name": "Quadro_3",
-      "price": 6,
-      "images": [
-        "https://lh3.googleusercontent.com/d/1Sbwq-KGv47vHx0uHX_88DDkFIxe4_aQG",
-        "https://lh3.googleusercontent.com/d/1e7SpwXUpoi8VKGAddYqXp22e3u9VsOzY",
-        "https://lh3.googleusercontent.com/d/1o-eqNevdcLCOnb9q8RIT1Gg-YIXm5DTT"
-      ],
-      "originalCategory": "Quadros"
+      "position": 2,
+      "categoryTarget": "Fotos",
+      "url": "https://lh3.googleusercontent.com/d/1yK0iLz-iqt4h7cnuMoRvYFu1aazt0RYk"
+    },
+    {
+      "position": 3,
+      "categoryTarget": "Fotos",
+      "url": "https://lh3.googleusercontent.com/d/17EqpabH12LXqZIYv7AN_UJ9r0zl3Wq_m"
     }
   ],
+  "featuredThemeProducts": [],
   "catalog": [
+    {
+      "categoryTitle": "Fotos",
+      "items": [
+        {
+          "name": "Tirinha de Fotos Estilo Filme",
+          "price": 1,
+          "coverImage": "",
+          "images": []
+        },
+        {
+          "name": "Tirinha de Fotos Vintage",
+          "price": 2,
+          "coverImage": "",
+          "images": []
+        },
+        {
+          "name": "Tirinha de Fotos Temática",
+          "price": 3,
+          "coverImage": "",
+          "images": []
+        },
+        {
+          "name": "Tirinha de Fotos",
+          "price": 4,
+          "coverImage": "",
+          "images": []
+        },
+        {
+          "name": "Polaroids G",
+          "price": 5,
+          "coverImage": "",
+          "images": [
+            {
+              "name": "24 Unidades",
+              "url": "https://lh3.googleusercontent.com/d/1WGR6VwTvmcpi0OwOQPEHI-ViieQ8ScXk"
+            },
+            {
+              "name": "16 Unidades",
+              "url": "https://lh3.googleusercontent.com/d/1kAcH_zWCBqxO0rsi_rCXHigGZWTzzDt7"
+            },
+            {
+              "name": "8 Unidades",
+              "url": "https://lh3.googleusercontent.com/d/1dQZGNxngpWnczVagIJ107ostcAqU4b_R"
+            }
+          ]
+        },
+        {
+          "name": "Polaroids M",
+          "price": 6,
+          "coverImage": "",
+          "images": [
+            {
+              "name": "capa",
+              "url": "https://lh3.googleusercontent.com/d/12hSGdv0tcFZ5NkOfm8GTaVkcP_hcYo3z"
+            },
+            {
+              "name": "30 Unidades",
+              "url": "https://lh3.googleusercontent.com/d/1xpjLZVHyKqhca7oA210dA70WgbfcHrZ6"
+            },
+            {
+              "name": "20 Unidades",
+              "url": "https://lh3.googleusercontent.com/d/1QMp_ZP2U1kuLTWKBehqO8pdmI7Lo2_Rl"
+            },
+            {
+              "name": "10 Unidades",
+              "url": "https://lh3.googleusercontent.com/d/1WGZtVQXpIDCu0lHGes1fXNDVFFmoNKFm"
+            }
+          ]
+        },
+        {
+          "name": "Polaroids P",
+          "price": 7,
+          "coverImage": "",
+          "images": []
+        },
+        {
+          "name": "Fotos 10x15",
+          "price": 8,
+          "coverImage": "",
+          "images": [
+            {
+              "name": "100 Unidades",
+              "url": "https://lh3.googleusercontent.com/d/19hp4saF5K1v-qZVxezwStO2jigLi0nY0"
+            },
+            {
+              "name": "50 Unidades",
+              "url": "https://lh3.googleusercontent.com/d/1qZO4GgQ5lb1fJpgcqnOTcffPYpbp7XHF"
+            },
+            {
+              "name": "20 Unidades",
+              "url": "https://lh3.googleusercontent.com/d/1OTCtnSrjGD3za154cXvRM8fUKyZWZGx8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryTitle": "Quadrinhos Personalizados",
+      "items": [
+        {
+          "name": "Nós Cantinho",
+          "price": 9,
+          "coverImage": "",
+          "images": [
+            {
+              "name": "Nosso Cantinho - Cinza",
+              "url": "https://lh3.googleusercontent.com/d/1E1p-Ai_ikZX195ICCXhpfvWwmhOP3VLe"
+            }
+          ]
+        },
+        {
+          "name": "Meu Lugar Favorito",
+          "price": 10,
+          "coverImage": "",
+          "images": [
+            {
+              "name": "Meu Lugar Favorito - Branco",
+              "url": "https://lh3.googleusercontent.com/d/1rQTV5TEUcCH6TVhZPgMN48-OtIEweFiQ"
+            },
+            {
+              "name": "Meu Lugar Favorito - Preto",
+              "url": "https://lh3.googleusercontent.com/d/1ohOOd1VPiIvuRXvKkgZ0q9AgXZyzfiX_"
+            }
+          ]
+        },
+        {
+          "name": "Spotify - 4 Fotos",
+          "price": 11,
+          "coverImage": "",
+          "images": [
+            {
+              "name": "Spotify - Branco",
+              "url": "https://lh3.googleusercontent.com/d/1ZhJT5eAxvLaCPQEedto0h9idtaV26pS8"
+            },
+            {
+              "name": "Spotify - Branco e Preto",
+              "url": "https://lh3.googleusercontent.com/d/1z6IWIJzKv68qCacND8kYOHrczQ2Hnj0w"
+            },
+            {
+              "name": "Spotify - Preto",
+              "url": "https://lh3.googleusercontent.com/d/1XFFBuEDTe7jyQ98YKQbrVuGcf9Num2Cs"
+            }
+          ]
+        },
+        {
+          "name": "Spotify",
+          "price": 12,
+          "coverImage": "",
+          "images": [
+            {
+              "name": "Spotify - Branco",
+              "url": "https://lh3.googleusercontent.com/d/11Lhrcp8Wu-v4apCYfMsfBrj9_ZOKE2YK"
+            },
+            {
+              "name": "Spotify - Preto",
+              "url": "https://lh3.googleusercontent.com/d/1Qbuy2e-VSuUaoz_9haE-GgZeChFbM_AM"
+            }
+          ]
+        },
+        {
+          "name": "O Melhor de Nós",
+          "price": 13,
+          "coverImage": "",
+          "images": [
+            {
+              "name": "O Melhor de Nós - Preto",
+              "url": "https://lh3.googleusercontent.com/d/1CXe3ePXCUwR_TsI7uVCgwVtzZOZ5p32G"
+            }
+          ]
+        },
+        {
+          "name": "Nosso Amor",
+          "price": 14,
+          "coverImage": "",
+          "images": [
+            {
+              "name": "Nosso Amor - Branco",
+              "url": "https://lh3.googleusercontent.com/d/1okl5MnBmgnUA-JgOfId_Zo__KbB8oazr"
+            },
+            {
+              "name": "Nosso Amor - Preto e Branco",
+              "url": "https://lh3.googleusercontent.com/d/1tWitsqGxIDaZG2BuU5UfETzfdpmbiaoV"
+            },
+            {
+              "name": "Nosso Amor - Preto",
+              "url": "https://lh3.googleusercontent.com/d/1hQ1nfDamKjCB1Vj5OzgTx9MdY1wqiN8r"
+            }
+          ]
+        },
+        {
+          "name": "A Nossa História",
+          "price": 15,
+          "coverImage": "",
+          "images": [
+            {
+              "name": "A Nossa História - Branco e Preto",
+              "url": "https://lh3.googleusercontent.com/d/1tGFdpDnQi6nGeSz43k18DtwhexdRr7G1"
+            },
+            {
+              "name": "A Nossa História - Preto",
+              "url": "https://lh3.googleusercontent.com/d/1o5Uj9-TBi_61crd8hDtc9sYvNBgniPTv"
+            }
+          ]
+        }
+      ]
+    },
     {
       "categoryTitle": "Figurinhas",
       "items": [
         {
           "name": "Figurinhas_2",
-          "price": 1,
+          "price": 16,
+          "coverImage": "",
           "images": [
-            "https://lh3.googleusercontent.com/d/1byYQE9sls740Ug20NqRmqEFQVTZXXo8s",
-            "https://lh3.googleusercontent.com/d/1S3TBwn7wzAowrRoBfeeX0fn3g-f8slQL",
-            "https://lh3.googleusercontent.com/d/1Y7d5-xEeT0oWULZ7qNTuLpYyoLZgqPfl"
+            {
+              "name": "download.jpeg",
+              "url": "https://lh3.googleusercontent.com/d/1byYQE9sls740Ug20NqRmqEFQVTZXXo8s"
+            },
+            {
+              "name": "download (1).jpeg",
+              "url": "https://lh3.googleusercontent.com/d/1S3TBwn7wzAowrRoBfeeX0fn3g-f8slQL"
+            },
+            {
+              "name": "download (4).jpeg",
+              "url": "https://lh3.googleusercontent.com/d/1Y7d5-xEeT0oWULZ7qNTuLpYyoLZgqPfl"
+            }
           ]
         },
         {
           "name": "Figurinhas_1",
-          "price": 2,
+          "price": 17,
+          "coverImage": "",
           "images": [
-            "https://lh3.googleusercontent.com/d/1CGhqu1y-ZfuRnF9A8p-UFZK4DjtBG8W0",
-            "https://lh3.googleusercontent.com/d/12fBnELf6r_p1S71Hv6xZCTd5Xew219O4",
-            "https://lh3.googleusercontent.com/d/15dq-FKiVTBh730SZXv0udzNMW-SEuXdI"
-          ]
-        }
-      ]
-    },
-    {
-      "categoryTitle": "Polaroids",
-      "items": [
-        {
-          "name": "Polaroid_1",
-          "price": 3,
-          "images": [
-            "https://lh3.googleusercontent.com/d/1l8DExXm1v8WWi5BUL3cyHXV38h3c-Joc",
-            "https://lh3.googleusercontent.com/d/1noNpG03HibSmDt2Vw17PMC3wzlP88xGv"
-          ]
-        },
-        {
-          "name": "Polaroid_3",
-          "price": 4,
-          "images": [
-            "https://lh3.googleusercontent.com/d/1DL8M9m2ykZDtg0XccKXDHoGTgyyISBJT",
-            "https://lh3.googleusercontent.com/d/1HxOC71b-QCt93clnW9jmUzUN5Y5e8Gtt",
-            "https://lh3.googleusercontent.com/d/1f7JRRDNR15Uax0p7xgQQMcpsiwkLGduC"
-          ]
-        },
-        {
-          "name": "Polaroid_2",
-          "price": 5,
-          "images": [
-            "https://lh3.googleusercontent.com/d/1SNFwk4NeWXnWceWDc4_ofq9Rb5KCTtOk",
-            "https://lh3.googleusercontent.com/d/1NQXXl--Cd50PYgCo-il7NbaiHJbN2kwP",
-            "https://lh3.googleusercontent.com/d/1pr9WzsRXATDu0lfy0I2d063kU786ye34"
-          ]
-        }
-      ]
-    },
-    {
-      "categoryTitle": "Quadros",
-      "items": [
-        {
-          "name": "Quadro_3",
-          "price": 6,
-          "images": [
-            "https://lh3.googleusercontent.com/d/1Sbwq-KGv47vHx0uHX_88DDkFIxe4_aQG",
-            "https://lh3.googleusercontent.com/d/1e7SpwXUpoi8VKGAddYqXp22e3u9VsOzY",
-            "https://lh3.googleusercontent.com/d/1o-eqNevdcLCOnb9q8RIT1Gg-YIXm5DTT"
-          ]
-        },
-        {
-          "name": "Quadro_2",
-          "price": 7,
-          "images": [
-            "https://lh3.googleusercontent.com/d/1YXqD5tUSa5glN-LVdfNQHFhC1grFAAuc",
-            "https://lh3.googleusercontent.com/d/1KxH51vlUcVvTpKkpv7HVUvS9gsALpSdZ",
-            "https://lh3.googleusercontent.com/d/1J7hswe_te81JoaGSpVfYqDZ-4QCSqdc9",
-            "https://lh3.googleusercontent.com/d/1AgpHDPp62atGYYN05ZDDqcc-1kJ2bNzY"
-          ]
-        },
-        {
-          "name": "Quadro_1",
-          "price": 8,
-          "images": [
-            "https://lh3.googleusercontent.com/d/13Q1cIOubQ8UO8WJqS9AFaUArDwVk7qwa",
-            "https://lh3.googleusercontent.com/d/13GDdYqH_WmNQAogMYx0ezAWbFOVyd5ro",
-            "https://lh3.googleusercontent.com/d/1g-12dUXWzVmiZqD2otNeXJJGoZwnkkd-"
+            {
+              "name": "download (1).jpeg",
+              "url": "https://lh3.googleusercontent.com/d/1CGhqu1y-ZfuRnF9A8p-UFZK4DjtBG8W0"
+            },
+            {
+              "name": "download (2).jpeg",
+              "url": "https://lh3.googleusercontent.com/d/12fBnELf6r_p1S71Hv6xZCTd5Xew219O4"
+            },
+            {
+              "name": "download (3).jpeg",
+              "url": "https://lh3.googleusercontent.com/d/15dq-FKiVTBh730SZXv0udzNMW-SEuXdI"
+            }
           ]
         }
       ]
