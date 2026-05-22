@@ -26,10 +26,12 @@
             font-size: 0.95rem; 
         }
         
-        /* Header designed with a wine block covering the top half of the logo */
+        /* Header definitivo: para exatamente na metade da imagem */
+        /* Header e Logo com tamanho ligeiramente reduzido */
         header { 
-            background: linear-gradient(180deg, var(--primary-burgundy) 0%, var(--primary-burgundy) 55px, var(--surface) 55px, var(--surface) 100%);
-            padding: 0 20px 15px 20px; 
+            background: var(--primary-burgundy) !important; 
+            padding: 0 20px; 
+            height: 70px; /* Reduzido levemente a altura do fundo vermelho */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -44,16 +46,25 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            max-width: 130px;
-            margin-top: 10px; /* Positions logo cleanly across the gradient line */
+            max-width: 175px; /* Reduzido sutilmente a imagem (era 200px) */
+            position: relative;
+            top: 30px; /* Ajustado para parar exatamente no meio da nova proporção */
         }
 
         .logo-img {
             width: 100%;
             height: auto;
             display: block;
-            margin: 0 auto;
             border-radius: 8px;
+        }
+
+        /* Espaçamento para o conteúdo não sumir atrás da logo */
+        main.container-fluid {
+            margin-top: 45px; /* Empurra todo o conteúdo para baixo, tirando de trás da logo */
+        }
+        main#mainTab, 
+        main.container-fluid {
+            margin-top: 55px !important; /* O !important garante que o Bootstrap não ignore a margem */
         }
 
         /* Hero Text Fallback */
@@ -90,16 +101,19 @@
         }
 
         /* --- FEATURED BOXES --- */
+        /* --- FEATURED BOXES CORRIGIDOS --- */
         .amazon-box {
             background: var(--surface);
             border: 1px solid var(--border-soft);
             border-radius: 12px;
-            padding: 18px;
+            padding: 16px; /* Ajustado sutilmente para dar mais área útil interna */
             box-shadow: 0 4px 12px rgba(0,0,0,0.02);
             margin-bottom: 20px;
             transition: box-shadow 0.2s ease;
+            overflow: hidden; /* Garante que nada saia dos cantos arredondados */
         }
         .amazon-box:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.04); }
+        
         .amazon-box-header {
             display: flex;
             justify-content: space-between;
@@ -108,22 +122,29 @@
             cursor: pointer;
         }
         .amazon-box-title {
-            font-size: 1.15em;
+            font-size: 1.1em;
             color: var(--text-dark); 
             font-weight: 700;
             margin: 0;
         }
+        
+        /* Grid inteligente que impede colunas de estourarem para fora */
         .amazon-products-4grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 14px;
+            grid-template-columns: repeat(2, minmax(0, 1fr)); /* O minmax impede o estouro */
+            gap: 12px;
         }
+        
+        /* Força o card a respeitar o tamanho máximo da coluna */
         .amazon-mini-card {
             cursor: pointer;
             background: var(--surface);
             transition: transform 0.2s ease;
+            width: 100%;
+            min-width: 0; /* Quebra qualquer tamanho fixo herdado de estruturas externas */
         }
         .amazon-mini-card:hover { transform: translateY(-2px); }
+        
         .amazon-mini-image {
             width: 100%;
             height: 100px;
@@ -137,13 +158,14 @@
             overflow: hidden;
         }
         .amazon-mini-image img { width: 100%; height: 100%; object-fit: cover; }
+        
         .amazon-mini-title {
-            font-size: 0.85em;
+            font-size: 0.82em;
             font-weight: 500;
             color: var(--text-dark);
             white-space: nowrap;
             overflow: hidden;
-            text-overflow: ellipsis;
+            text-overflow: ellipsis; /* Corta o texto com '...' se for comprido demais */
             margin-bottom: 2px;
         }
         .amazon-mini-price {
@@ -170,12 +192,15 @@
         .ver-mais-link {
             font-size: 0.85em;
             font-weight: 600;
-            color: var(--text-muted);
+            color: var(--primary-burgundy); /* Alterado de var(--text-muted) para o vermelho */
             text-decoration: none;
-            transition: color 0.2s ease;
+            transition: opacity 0.2s ease;
             white-space: nowrap; 
         }
-        .ver-mais-link:hover { color: var(--primary-burgundy); }
+        .ver-mais-link:hover { 
+            opacity: 0.8; /* Em vez de mudar a cor no hover, ele dá uma leve sumidinha estilosa */
+            color: var(--primary-burgundy); 
+        }
         .scroll-wrapper {
             display: flex; 
             gap: 14px; 
@@ -275,30 +300,91 @@
             box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);
             transition: background 0.2s ease, transform 0.2s ease;
         }
+        /* Customização do botão voltar para o padrão vermelho */
+        /* Botão voltar elegante, compacto e minimalista */
+        #categoryTab .btn-outline-secondary {
+            color: var(--primary-burgundy) !important;
+            border: 1px solid rgba(122, 27, 50, 0.2) !important; /* Borda fina e suave */
+            background-color: transparent !important;
+            font-weight: 600;
+            font-size: 0.85rem;
+            padding: 6px 16px !important;
+            border-radius: 6px !important; /* Cantos levemente suavizados, sem formato oval */
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            white-space: nowrap;
+            transition: all 0.2s ease;
+        }
+
+        /* Efeito de clique e hover sutil */
+        #categoryTab .btn-outline-secondary:hover {
+            border-color: var(--primary-burgundy) !important;
+            background-color: var(--secondary-pink) !important; /* Fundo rosa bem clarinho */
+            color: var(--primary-burgundy) !important;
+        }
+        /* Ajuste do cabeçalho da visão de categorias */
+        #categoryTab .d-flex.align-items-center.mb-4 {
+            display: flex !important;
+            align-items: center !important;
+            gap: 12px; /* Define um espaço fixo e limpo entre o botão e o texto */
+            flex-wrap: nowrap; /* Impede o título de quebrar para baixo de forma desorganizada */
+        }
+
+        #categoryTabTitle {
+            font-size: 1.15rem !important;
+            font-weight: 700 !important;
+            line-height: 1.3;
+            margin: 0 !important;
+            color: var(--text-dark);
+            /* Garante que textos longos não quebrem o layout abruptamente */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+        }
         .whatsapp-btn:hover { background: #20b858; transform: translateY(-1px); }
 
         /* Modal */
         .modal-content { border: none !important; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
         .modal-image-wrapper {
             width: 100%;
-            height: 200px;
+            height: auto; /* Remove a altura travada de 200px */
+            max-height: 380px; /* Define um limite máximo de altura elegante para o celular */
             background: var(--bg-light);
             border-radius: 12px;
-            overflow: hidden;
+            overflow-y: auto; /* Ativa a rolagem vertical se a imagem passar do limite máximo */
             display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: 16px;
+            scrollbar-width: thin; /* Deixa a barra de rolagem sutil */
         }
-        .modal-image-wrapper img { width: 100%; height: 100%; object-fit: cover; }
-
+        
+        .modal-image-wrapper img { 
+            width: 100%; 
+            height: auto; /* Mantém a proporção real e a altura natural da foto */
+            display: block;
+            object-fit: contain; /* Garante que a imagem apareça inteira, sem cortes bizarros */
+        }
+        /* Desktop UI Scaling */
         /* Desktop UI Scaling */
         @media (min-width: 992px) {
             header {
-                background: linear-gradient(180deg, var(--primary-burgundy) 0%, var(--primary-burgundy) 65px, var(--surface) 65px, var(--surface) 100%);
-                padding-bottom: 20px;
+                background: var(--primary-burgundy) !important;
+                height: 85px;
+                padding: 0 20px;
             }
-            .logo-container { max-width: 160px; margin-top: 15px; }
+            .logo-container { 
+                max-width: 230px; 
+                top: 40px; 
+            }
+            /* Margem ampliada para o desktop */
+            main#mainTab, 
+            main.container-fluid {
+                margin-top: 75px !important; 
+            }
+            /* ... mantenha o restante das regras do media query iguais ... */
             .carousel-item img { height: 250px; }
             .hero-view { min-height: 110px; font-size: 1.1em; }
             .amazon-box-title { font-size: 1.25em; }
@@ -379,10 +465,10 @@
     <div id="categoryTab" class="view-tab">
         <div class="container-fluid container-lg px-3 py-4">
             <div class="d-flex align-items-center mb-4">
-                <button class="btn btn-outline-secondary btn-sm me-3 rounded-pill px-3" onclick="backToCatalogue()">
+                <button class="btn btn-outline-secondary" onclick="backToCatalogue()">
                     ← Voltar
                 </button>
-                <h2 class="h5 fw-bold m-0" id="categoryTabTitle" style="color: var(--text-dark);">Nome da Categoria</h2>
+                <h2 id="categoryTabTitle">Nome da Categoria</h2>
             </div>
             <div class="category-view-grid" id="categoryTabGrid"></div>
         </div>
@@ -447,7 +533,7 @@
 
         let database = {
             themeTitle: "Namorados",
-            heroCarouselImages: [], 
+            carousel: [], 
             featuredThemeProducts: [],
             catalog: []
         };
@@ -488,22 +574,34 @@
             const heroText = document.getElementById('heroText');
             const innerContainer = document.getElementById('carouselInnerContainer');
 
-            if (database.heroCarouselImages && database.heroCarouselImages.length > 0) {
+            if (database.carousel && database.carousel.length > 0) {
                 heroText.style.display = 'none'; 
                 carousel.style.display = 'block'; 
-
                 innerContainer.innerHTML = ''; 
                 
-                database.heroCarouselImages.forEach((imgUrl, index) => {
+                database.carousel.forEach((banner, index) => {
                     const activeClass = index === 0 ? 'active' : '';
-                    innerContainer.innerHTML += `
-                        <div class="carousel-item ${activeClass}">
-                            <img src="${imgUrl}" class="d-block w-100" alt="Banner ${index + 1}">
-                        </div>
-                    `;
+                    const itemDiv = document.createElement('div');
+                    itemDiv.className = `carousel-item ${activeClass}`;
+                    itemDiv.innerHTML = `<img src="${banner.url}" class="d-block w-100" alt="Banner ${banner.position}" style="cursor: pointer;">`;
+                    
+                    itemDiv.querySelector('img').onclick = () => {
+                        if (!banner.categoryTarget) return;
+                        const targetCat = database.catalog.find(c => 
+                            c.categoryTitle.toLowerCase().trim() === banner.categoryTarget.toLowerCase().trim()
+                        );
+                        if (targetCat) switchCategoryView(targetCat.categoryTitle, targetCat.items);
+                    };
+                    innerContainer.appendChild(itemDiv);
+                });
+
+                // --- NEW: Force Bootstrap to recognize the new slides ---
+                const myCarousel = new bootstrap.Carousel(carousel, {
+                    interval: 3000, // Changes every 3 seconds
+                    ride: 'carousel'
                 });
             } else {
-                heroText.innerText = `📸 Presentes inesquecíveis para o Especial ${themeTitle}! Encomende com antecedência.`;
+                heroText.innerText = `📸 Presentes inesquecíveis para o Especial ${themeTitle}!`;
             }
         }
 
@@ -558,7 +656,7 @@
                         card.className = 'card-custom';
                         card.onclick = () => openProductDetails(product, cat);
                         
-                        const imageSrc = (product.images && product.images.length > 0) ? product.images[0] : '';
+                        const imageSrc = product.coverImage ? product.coverImage : ((product.images && product.images.length > 0) ? product.images[0].url : '');
                         const cardImgContent = imageSrc ? `<img src="${imageSrc}" referrerpolicy="no-referrer">` : '✨';
 
                         card.innerHTML = `
@@ -582,7 +680,7 @@
                 openProductDetails(product, categoryContext);
             };
 
-            const imageSrc = (product.images && product.images.length > 0) ? product.images[0] : '';
+            const imageSrc = product.coverImage ? product.coverImage : ((product.images && product.images.length > 0) ? product.images[0].url : '');
             const cardImgContent = imageSrc ? `<img src="${imageSrc}" referrerpolicy="no-referrer">` : '✨';
 
             card.innerHTML = `
@@ -608,7 +706,7 @@
                 card.className = 'card-custom';
                 card.onclick = () => openProductDetails(product, categoryName);
 
-                const imageSrc = (product.images && product.images.length > 0) ? product.images[0] : '';
+                const imageSrc = product.coverImage ? product.coverImage : ((product.images && product.images.length > 0) ? product.images[0].url : '');
                 const cardImgContent = imageSrc ? `<img src="${imageSrc}" referrerpolicy="no-referrer">` : '✨';
 
                 card.innerHTML = `
@@ -640,33 +738,37 @@
 
         let selectedProduct = null;
         let selectedCategoryContext = "";
-        let selectedVarName = "";
+        let selectedVarObj = null;
 
         function openProductDetails(product, categoryContextName) {
             selectedProduct = product;
             selectedCategoryContext = categoryContextName;
             
-            const coreVariations = (product.images && product.images.length > 0) ? product.images : ["Padrão.jpg"];
-            selectedVarName = coreVariations[0];
+            const coreVariations = (product.images && product.images.length > 0) 
+                ? product.images 
+                : [{ name: "Padrão", url: "" }];
+                
+            selectedVarObj = coreVariations[0];
 
             document.getElementById('modalTitle').innerText = product.name;
             document.getElementById('modalPrice').innerText = `R$ ${product.price.toFixed(2).replace('.', ',')}`;
             
-            renderModalImage(selectedVarName);
+            renderModalImage(selectedVarObj.url, selectedVarObj.name);
 
             const variantBox = document.getElementById('variantsContainer');
             variantBox.innerHTML = '';
             
-            coreVariations.forEach((variantLink, idx) => {
-                const label = cleanFileNameLabel(variantLink);
+            coreVariations.forEach((variantObj, idx) => {
+                const label = cleanFileNameLabel(variantObj.name); 
+                
                 const badge = document.createElement('div');
                 badge.className = `variation-badge ${idx === 0 ? 'selected' : ''}`;
                 badge.innerText = label;
                 badge.onclick = () => {
                     document.querySelectorAll('.variation-badge').forEach(b => b.classList.remove('selected'));
                     badge.classList.add('selected');
-                    selectedVarName = variantLink;
-                    renderModalImage(selectedVarName);
+                    selectedVarObj = variantObj;
+                    renderModalImage(selectedVarObj.url, selectedVarObj.name);
                     updateWhatsappUrl();
                 };
                 variantBox.appendChild(badge);
@@ -676,28 +778,27 @@
             bsProductModal.show();
         }
 
-        function renderModalImage(imgSource) {
+        function renderModalImage(imgUrl, imgName) {
             const display = document.getElementById('modalImageDisplay');
-            if (imgSource.startsWith('http')) {
-                display.innerHTML = `<img src="${imgSource}" referrerpolicy="no-referrer">`;
+            if (imgUrl && imgUrl.startsWith('http')) {
+                display.innerHTML = `<img src="${imgUrl}" referrerpolicy="no-referrer">`;
             } else {
-                display.innerText = `✨ [ ${cleanFileNameLabel(imgSource)} ]`;
+                display.innerText = `✨ [ ${cleanFileNameLabel(imgName)} ]`;
             }
         }
 
         function updateWhatsappUrl() {
             const priceStr = `R$ ${selectedProduct.price.toFixed(2).replace('.', ',')}`;
-            const displayVariant = cleanFileNameLabel(selectedVarName);
+            const displayVariant = cleanFileNameLabel(selectedVarObj.name);
             const textMessage = `Olá! Quero encomendar:\n\n*Categoria:* ${selectedCategoryContext}\n*Produto:* ${selectedProduct.name}\n*Variação/Modelo:* ${displayVariant}\n*Valor:* ${priceStr}`;
             document.getElementById('whatsappLink').href = `https://wa.me/${STORE_PHONE}?text=${encodeURIComponent(textMessage)}`;
         }
 
-        function cleanFileNameLabel(pathOrUrl) {
-            if (!pathOrUrl || !pathOrUrl.includes('.')) return "Padrão";
-            let segment = pathOrUrl.split('/').pop().split('?')[0];
-            let clean = segment.split('.').slice(0, -1).join('.');
-            if (!clean) clean = segment;
-            return clean.replace(/_/g, ' ').replace(/-/g, ' ');
+        function cleanFileNameLabel(name) {
+            if (!name) return "Padrão";
+            let clean = name.split('.').slice(0, -1).join('.');
+            if (!clean) clean = name;
+            return clean.replace(/_/g, ' '); 
         }
     </script>
 </body>
