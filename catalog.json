@@ -24,7 +24,7 @@
       "items": [
         {
           "name": "Tirinha de Fotos Estilo Filme",
-          "price": 4,
+          "price": 4.5,
           "coverImage": "",
           "images": [
             {
@@ -35,7 +35,7 @@
         },
         {
           "name": "Tirinha de Fotos Vintage",
-          "price": 4,
+          "price": 4.5,
           "coverImage": "",
           "images": [
             {
@@ -50,7 +50,7 @@
         },
         {
           "name": "Tirinha de Fotos Temática",
-          "price": 4,
+          "price": 4.5,
           "coverImage": "",
           "images": [
             {
@@ -73,7 +73,7 @@
         },
         {
           "name": "Tirinha de Fotos",
-          "price": 3,
+          "price": 3.5,
           "coverImage": "",
           "images": [
             {
@@ -96,7 +96,7 @@
         },
         {
           "name": "Polaroids G",
-          "price": 1,
+          "price": 1.9,
           "coverImage": "",
           "images": [
             {
@@ -119,7 +119,7 @@
         },
         {
           "name": "Polaroids M",
-          "price": 1,
+          "price": 1.2,
           "coverImage": "",
           "images": [
             {
@@ -142,7 +142,7 @@
         },
         {
           "name": "Polaroids P",
-          "price": 1,
+          "price": 0.9,
           "coverImage": "",
           "images": [
             {
@@ -165,7 +165,7 @@
         },
         {
           "name": "Fotos 10x15",
-          "price": 25,
+          "price": 24.9,
           "coverImage": "",
           "images": [
             {
@@ -189,7 +189,7 @@
       "items": [
         {
           "name": "Nosso Cantinho",
-          "price": 19,
+          "price": 19.9,
           "coverImage": "",
           "images": [
             {
@@ -200,7 +200,7 @@
         },
         {
           "name": "Meu Lugar Favorito",
-          "price": 19,
+          "price": 19.9,
           "coverImage": "",
           "images": [
             {
@@ -215,7 +215,7 @@
         },
         {
           "name": "Spotify - 4 Fotos",
-          "price": 19,
+          "price": 19.9,
           "coverImage": "",
           "images": [
             {
@@ -238,7 +238,7 @@
         },
         {
           "name": "Spotify",
-          "price": 19,
+          "price": 19.9,
           "coverImage": "",
           "images": [
             {
@@ -253,7 +253,7 @@
         },
         {
           "name": "O Melhor de Nós",
-          "price": 19,
+          "price": 19.9,
           "coverImage": "",
           "images": [
             {
@@ -268,7 +268,7 @@
         },
         {
           "name": "Nosso Amor",
-          "price": 19,
+          "price": 19.9,
           "coverImage": "",
           "images": [
             {
@@ -287,7 +287,7 @@
         },
         {
           "name": "A Nossa História",
-          "price": 19,
+          "price": 19.9,
           "coverImage": "",
           "images": [
             {
@@ -311,7 +311,7 @@
       "items": [
         {
           "name": "Figurinhas_2",
-          "price": 10,
+          "price": 9.9,
           "coverImage": "",
           "images": [
             {
@@ -330,7 +330,7 @@
         },
         {
           "name": "Figurinhas_1",
-          "price": 250,
+          "price": 249.9,
           "coverImage": "",
           "images": [
             {
