@@ -22,18 +22,15 @@
             background-color: var(--bg-light); 
             color: var(--text-dark);
             -webkit-tap-highlight-color: transparent;
-            /* Aumentado o padding-bottom para dar espaço ao footer + botão fixo no mobile */
             padding-bottom: 80px; 
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             font-size: 0.95rem; 
         }
         
-        /* Header definitivo: para exatamente na metade da imagem */
-        /* Header e Logo com tamanho ligeiramente reduzido */
         header { 
             background: var(--primary-burgundy) !important; 
             padding: 0 20px; 
-            height: 70px; /* Reduzido levemente a altura do fundo vermelho */
+            height: 70px; 
             display: flex;
             justify-content: center;
             align-items: center;
@@ -48,9 +45,9 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            max-width: 175px; /* Reduzido sutilmente a imagem (era 200px) */
+            max-width: 175px; 
             position: relative;
-            top: 30px; /* Ajustado para parar exatamente no meio da nova proporção */
+            top: 30px; 
         }
 
         .logo-img {
@@ -60,16 +57,14 @@
             border-radius: 8px;
         }
 
-        /* Espaçamento para o conteúdo não sumir atrás da logo */
         main.container-fluid {
-            margin-top: 45px; /* Empurra todo o conteúdo para baixo, tirando de trás da logo */
+            margin-top: 45px; 
         }
         main#mainTab, 
         main.container-fluid {
-            margin-top: 55px !important; /* O !important garante que o Bootstrap não ignore a margem */
+            margin-top: 55px !important; 
         }
 
-        /* Hero Text Fallback */
         .hero-view {
             width: 100%; 
             min-height: 90px; 
@@ -88,7 +83,6 @@
             letter-spacing: 0.3px;
         }
 
-        /* Carousel Styles */
         .carousel-inner {
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.02);
@@ -102,17 +96,15 @@
             width: 100%;
         }
 
-        /* --- FEATURED BOXES --- */
-        /* --- FEATURED BOXES CORRIGIDOS --- */
         .amazon-box {
             background: var(--surface);
             border: 1px solid var(--border-soft);
             border-radius: 12px;
-            padding: 16px; /* Ajustado sutilmente para dar mais área útil interna */
+            padding: 16px; 
             box-shadow: 0 4px 12px rgba(0,0,0,0.02);
             margin-bottom: 20px;
             transition: box-shadow 0.2s ease;
-            overflow: hidden; /* Garante que nada saia dos cantos arredondados */
+            overflow: hidden; 
         }
         .amazon-box:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.04); }
         
@@ -130,20 +122,18 @@
             margin: 0;
         }
         
-        /* Grid inteligente que impede colunas de estourarem para fora */
         .amazon-products-4grid {
             display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr)); /* O minmax impede o estouro */
+            grid-template-columns: repeat(2, minmax(0, 1fr)); 
             gap: 12px;
         }
         
-        /* Força o card a respeitar o tamanho máximo da coluna */
         .amazon-mini-card {
             cursor: pointer;
             background: var(--surface);
             transition: transform 0.2s ease;
             width: 100%;
-            min-width: 0; /* Quebra qualquer tamanho fixo herdado de estruturas externas */
+            min-width: 0; 
         }
         .amazon-mini-card:hover { transform: translateY(-2px); }
         
@@ -167,7 +157,7 @@
             color: var(--text-dark);
             white-space: nowrap;
             overflow: hidden;
-            text-overflow: ellipsis; /* Corta o texto com '...' se for comprido demais */
+            text-overflow: ellipsis; 
             margin-bottom: 2px;
         }
         .amazon-mini-price {
@@ -176,7 +166,6 @@
             font-weight: 700;
         }
 
-        /* --- HORIZONTAL SWIPE ROWS --- */
         .category-section { margin-bottom: 35px; position: relative; }
         .category-row-header {
             display: flex;
@@ -194,13 +183,13 @@
         .ver-mais-link {
             font-size: 0.85em;
             font-weight: 600;
-            color: var(--primary-burgundy); /* Alterado de var(--text-muted) para o vermelho */
+            color: var(--primary-burgundy); 
             text-decoration: none;
             transition: opacity 0.2s ease;
             white-space: nowrap; 
         }
         .ver-mais-link:hover { 
-            opacity: 0.8; /* Em vez de mudar a cor no hover, ele dá uma leve sumidinha estilosa */
+            opacity: 0.8; 
             color: var(--primary-burgundy); 
         }
         .scroll-wrapper {
@@ -242,7 +231,6 @@
         .card-title-custom { font-size: 0.85em; font-weight: 500; margin-bottom: 4px; color: var(--text-dark); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
         .card-price { font-weight: 700; color: var(--primary-burgundy); font-size: 0.95em; margin: 0; }
 
-        /* --- DYNAMIC VIEW TABS --- */
         .view-tab { display: none; }
         .view-tab.active { display: block; animation: fadeIn 0.3s ease; }
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
@@ -255,7 +243,6 @@
         }
         .category-view-grid .card-custom { flex: none; width: 100%; }
 
-        /* --- STICKY FOOTER --- */
         .sticky-footer {
             position: fixed;
             bottom: 0;
@@ -268,7 +255,6 @@
             border-top: 1px solid var(--border-soft);
         }
 
-        /* --- CUSTOM BUSINESS FOOTER --- */
         .custom-footer {
             background-color: var(--primary-burgundy);
             color: #ffffff;
@@ -313,7 +299,6 @@
             color: rgba(255, 255, 255, 0.5);
         }
 
-        /* --- BADGES & BUTTONS --- */
         .variation-badge { 
             padding: 6px 14px; 
             border: 1px solid var(--border-soft); 
@@ -347,16 +332,15 @@
             box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);
             transition: background 0.2s ease, transform 0.2s ease;
         }
-        /* Customização do botão voltar para o padrão vermelho */
-        /* Botão voltar elegante, compacto e minimalista */
+        
         #categoryTab .btn-outline-secondary {
             color: var(--primary-burgundy) !important;
-            border: 1px solid rgba(122, 27, 50, 0.2) !important; /* Borda fina e suave */
+            border: 1px solid rgba(122, 27, 50, 0.2) !important; 
             background-color: transparent !important;
             font-weight: 600;
             font-size: 0.85rem;
             padding: 6px 16px !important;
-            border-radius: 6px !important; /* Cantos levemente suavizados, sem formato oval */
+            border-radius: 6px !important; 
             display: inline-flex;
             align-items: center;
             gap: 5px;
@@ -364,18 +348,17 @@
             transition: all 0.2s ease;
         }
 
-        /* Efeito de clique e hover sutil */
         #categoryTab .btn-outline-secondary:hover {
             border-color: var(--primary-burgundy) !important;
-            background-color: var(--secondary-pink) !important; /* Fundo rosa bem clarinho */
+            background-color: var(--secondary-pink) !important; 
             color: var(--primary-burgundy) !important;
         }
-        /* Ajuste do cabeçalho da visão de categorias */
+        
         #categoryTab .d-flex.align-items-center.mb-4 {
             display: flex !important;
             align-items: center !important;
-            gap: 12px; /* Define um espaço fixo e limpo entre o botão e o texto */
-            flex-wrap: nowrap; /* Impede o título de quebrar para baixo de forma desorganizada */
+            gap: 12px; 
+            flex-wrap: nowrap; 
         }
 
         #categoryTabTitle {
@@ -384,7 +367,6 @@
             line-height: 1.3;
             margin: 0 !important;
             color: var(--text-dark);
-            /* Garante que textos longos não quebrem o layout abruptamente */
             overflow: hidden;
             text-overflow: ellipsis;
             display: -webkit-box;
@@ -392,33 +374,30 @@
         }
         .whatsapp-btn:hover { background: #20b858; transform: translateY(-1px); }
 
-        /* Modal */
         .modal-content { border: none !important; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
         .modal-image-wrapper {
             width: 100%;
-            height: auto; /* Remove a altura travada de 200px */
-            max-height: 380px; /* Define um limite máximo de altura elegante para o celular */
+            height: auto; 
+            max-height: 380px; 
             background: var(--bg-light);
             border-radius: 12px;
-            overflow-y: auto; /* Ativa a rolagem vertical se a imagem passar do limite máximo */
+            overflow-y: auto; 
             display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: 16px;
-            scrollbar-width: thin; /* Deixa a barra de rolagem sutil */
+            scrollbar-width: thin; 
         }
         
         .modal-image-wrapper img { 
             width: 100%; 
-            height: auto; /* Mantém a proporção real e a altura natural da foto */
+            height: auto; 
             display: block;
-            object-fit: contain; /* Garante que a imagem apareça inteira, sem cortes bizarros */
+            object-fit: contain; 
         }
-        /* Desktop UI Scaling */
+        
         @media (min-width: 992px) {
-            body {
-                padding-bottom: 0px; /* Remove o padding extra no desktop já que não há botão fixo */
-            }
+            body { padding-bottom: 0px; }
             header {
                 background: var(--primary-burgundy) !important;
                 height: 85px;
@@ -428,7 +407,6 @@
                 max-width: 230px; 
                 top: 40px; 
             }
-            /* Margem ampliada para o desktop */
             main#mainTab, 
             main.container-fluid {
                 margin-top: 75px !important; 
@@ -444,8 +422,6 @@
             .card-title-custom { font-size: 0.95em; }
             .card-price { font-size: 1.05em; }
             .category-view-grid { grid-template-columns: repeat(4, 1fr); }
-            
-            /* Esconde a barra fixa do whatsapp em telas grandes */
             .sticky-footer { display: none; }
         }
     </style>
@@ -466,9 +442,8 @@
             <div class="row mb-4">
                 <div class="col-12">
                     
-                    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" style="display: none;">
-                        <div class="carousel-inner" id="carouselInnerContainer">
-                            </div>
+                    <div id="heroCarousel" class="carousel slide carousel-fade" style="display: none;">
+                        <div class="carousel-inner" id="carouselInnerContainer"></div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Anterior</span>
@@ -685,13 +660,24 @@
                     innerContainer.appendChild(itemDiv);
                 });
 
-                const myCarousel = new bootstrap.Carousel(carousel, {
+                new bootstrap.Carousel(carousel, {
                     interval: 3000, 
                     ride: 'carousel'
                 });
             } else {
                 heroText.innerText = `📸 Presentes inesquecíveis para o Especial ${themeTitle}!`;
             }
+        }
+
+        // Função utilitária para pegar o preço formatado com base no índice (ou o padrão se não houver variação de valor correspondente)
+        function getProductPriceString(product, index = 0) {
+            let priceVal = 0;
+            if (Array.isArray(product.price)) {
+                priceVal = product.price[index] !== undefined ? product.price[index] : product.price[0];
+            } else {
+                priceVal = parseFloat(product.price) || 0;
+            }
+            return `R$ ${priceVal.toFixed(2).replace('.', ',')}`;
         }
 
         function buildCataloguePage() {
@@ -752,7 +738,7 @@
                             <div class="card-image">${cardImgContent}</div>
                             <div class="card-info">
                                 <h3 class="card-title-custom">${product.name}</h3>
-                                <p class="card-price">R$ ${product.price.toFixed(2).replace('.', ',')}</p>
+                                <p class="card-price">${getProductPriceString(product, 0)}</p>
                             </div>
                         `;
                         wrapper.appendChild(card);
@@ -775,7 +761,7 @@
             card.innerHTML = `
                 <div class="amazon-mini-image">${cardImgContent}</div>
                 <div class="amazon-mini-title">${product.name}</div>
-                <div class="amazon-mini-price">R$ ${product.price.toFixed(2).replace('.', ',')}</div>
+                <div class="amazon-mini-price">${getProductPriceString(product, 0)}</div>
             `;
             return card;
         }
@@ -802,7 +788,7 @@
                     <div class="card-image">${cardImgContent}</div>
                     <div class="card-info">
                         <h3 class="card-title-custom">${product.name}</h3>
-                        <p class="card-price">R$ ${product.price.toFixed(2).replace('.', ',')}</p>
+                        <p class="card-price">${getProductPriceString(product, 0)}</p>
                     </div>
                 `;
                 gridContainer.appendChild(card);
@@ -828,10 +814,12 @@
         let selectedProduct = null;
         let selectedCategoryContext = "";
         let selectedVarObj = null;
+        let selectedVarIdx = 0; // Controla o index da variação selecionada
 
         function openProductDetails(product, categoryContextName) {
             selectedProduct = product;
             selectedCategoryContext = categoryContextName;
+            selectedVarIdx = 0;
             
             const coreVariations = (product.images && product.images.length > 0) 
                 ? product.images 
@@ -840,7 +828,7 @@
             selectedVarObj = coreVariations[0];
 
             document.getElementById('modalTitle').innerText = product.name;
-            document.getElementById('modalPrice').innerText = `R$ ${product.price.toFixed(2).replace('.', ',')}`;
+            document.getElementById('modalPrice').innerText = getProductPriceString(product, 0);
             
             renderModalImage(selectedVarObj.url, selectedVarObj.name);
 
@@ -857,6 +845,9 @@
                     document.querySelectorAll('.variation-badge').forEach(b => b.classList.remove('selected'));
                     badge.classList.add('selected');
                     selectedVarObj = variantObj;
+                    selectedVarIdx = idx; // Vincula o index do clique ao preço correto
+                    
+                    document.getElementById('modalPrice').innerText = getProductPriceString(product, idx);
                     renderModalImage(selectedVarObj.url, selectedVarObj.name);
                     updateWhatsappUrl();
                 };
@@ -877,7 +868,7 @@
         }
 
         function updateWhatsappUrl() {
-            const priceStr = `R$ ${selectedProduct.price.toFixed(2).replace('.', ',')}`;
+            const priceStr = getProductPriceString(selectedProduct, selectedVarIdx);
             const displayVariant = cleanFileNameLabel(selectedVarObj.name);
             const textMessage = `Olá! Quero encomendar:\n\n*Categoria:* ${selectedCategoryContext}\n*Produto:* ${selectedProduct.name}\n*Variação/Modelo:* ${displayVariant}\n*Valor:* ${priceStr}`;
             document.getElementById('whatsappLink').href = `https://wa.me/${STORE_PHONE}?text=${encodeURIComponent(textMessage)}`;
