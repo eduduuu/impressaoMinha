@@ -1,5 +1,5 @@
 {
-  "themeTitle": "Tema",
+  "themeTitle": "Dia dos Namorados",
   "carousel": [
     {
       "position": 1,
@@ -8,16 +8,207 @@
     },
     {
       "position": 2,
-      "categoryTarget": "Figurinhas",
-      "url": "https://lh3.googleusercontent.com/d/18QRnp1uf7xqv8PaDQ4e3Scdwgdpu1eZy"
+      "categoryTarget": "Outros",
+      "url": "https://lh3.googleusercontent.com/d/1e9_b-F4bxMPsGLj9qbswEYKqEleCyNsS"
     },
     {
       "position": 3,
       "categoryTarget": "Fotos",
-      "url": "https://lh3.googleusercontent.com/d/1VtsSWDQWcYADh1Cju_DJSavwKu9SNiyy"
+      "url": "https://lh3.googleusercontent.com/d/18JVeicBO7SWn0UfRuvp51-mGNp4zbtcr"
     }
   ],
-  "featuredThemeProducts": [],
+  "featuredThemeProducts": [
+    {
+      "name": "Tirinha de Fotos Estilo Filme",
+      "price": 4.5,
+      "coverImage": "",
+      "images": [
+        {
+          "name": "3 Unidades",
+          "url": "https://lh3.googleusercontent.com/d/1m45OeFm2BSEcwKEAi6VI1dtqTOkW6RlP"
+        }
+      ],
+      "originalCategory": "Fotos"
+    },
+    {
+      "name": "Tirinha de Fotos Vintage",
+      "price": 4.5,
+      "coverImage": "",
+      "images": [
+        {
+          "name": "Preto",
+          "url": "https://lh3.googleusercontent.com/d/1ehNs5ccx5L48NbObhHNsTwFfv4OdPocu"
+        },
+        {
+          "name": "Branco",
+          "url": "https://lh3.googleusercontent.com/d/1QcFeSx6lowFjj9YJwrYjCEVKLbmnQlDH"
+        }
+      ],
+      "originalCategory": "Fotos"
+    },
+    {
+      "name": "Tirinha de Fotos Temática",
+      "price": 4.5,
+      "coverImage": "",
+      "images": [
+        {
+          "name": "Branco, Preto e Vermelho",
+          "url": "https://lh3.googleusercontent.com/d/1yWFbqEr1D88tsdEFZz5IUPEhhaRvB-a_"
+        },
+        {
+          "name": "Branco",
+          "url": "https://lh3.googleusercontent.com/d/1D_5ApgnVoVTPEXmbuhYXt2NpBjWUx-7B"
+        },
+        {
+          "name": "Preto",
+          "url": "https://lh3.googleusercontent.com/d/1ytM6YqBGogiwhJePL8IpO9CEV8r657bj"
+        },
+        {
+          "name": "Vermelho",
+          "url": "https://lh3.googleusercontent.com/d/1FX_l96Yw7y8kORQayewm4m0jwyBYjanu"
+        }
+      ],
+      "originalCategory": "Fotos"
+    },
+    {
+      "name": "Nosso Cantinho",
+      "price": 19.9,
+      "coverImage": "",
+      "images": [
+        {
+          "name": "Nosso Cantinho - Cinza",
+          "url": "https://lh3.googleusercontent.com/d/1E1p-Ai_ikZX195ICCXhpfvWwmhOP3VLe"
+        }
+      ],
+      "originalCategory": "Quadrinhos Personalizados"
+    },
+    {
+      "name": "Meu Lugar Favorito",
+      "price": 19.9,
+      "coverImage": "",
+      "images": [
+        {
+          "name": "Meu Lugar Favorito - Branco",
+          "url": "https://lh3.googleusercontent.com/d/1rQTV5TEUcCH6TVhZPgMN48-OtIEweFiQ"
+        },
+        {
+          "name": "Meu Lugar Favorito - Preto",
+          "url": "https://lh3.googleusercontent.com/d/1ohOOd1VPiIvuRXvKkgZ0q9AgXZyzfiX_"
+        }
+      ],
+      "originalCategory": "Quadrinhos Personalizados"
+    },
+    {
+      "name": "Spotify - 4 Fotos",
+      "price": 19.9,
+      "coverImage": "",
+      "images": [
+        {
+          "name": "Spotify - Preto",
+          "url": "https://lh3.googleusercontent.com/d/1aU7Jq9CtH6sLq2qky41kBpdGXsj7VcZl"
+        },
+        {
+          "name": "Spotify - Preto e Branco",
+          "url": "https://lh3.googleusercontent.com/d/1XFFBuEDTe7jyQ98YKQbrVuGcf9Num2Cs"
+        },
+        {
+          "name": "Spotify - Branco",
+          "url": "https://lh3.googleusercontent.com/d/1ZhJT5eAxvLaCPQEedto0h9idtaV26pS8"
+        },
+        {
+          "name": "Spotify - Branco e Preto",
+          "url": "https://lh3.googleusercontent.com/d/1z6IWIJzKv68qCacND8kYOHrczQ2Hnj0w"
+        }
+      ],
+      "originalCategory": "Quadrinhos Personalizados"
+    },
+    {
+      "name": "Spotify",
+      "price": 19.9,
+      "coverImage": "",
+      "images": [
+        {
+          "name": "Spotify - Branco",
+          "url": "https://lh3.googleusercontent.com/d/11Lhrcp8Wu-v4apCYfMsfBrj9_ZOKE2YK"
+        },
+        {
+          "name": "Spotify - Preto",
+          "url": "https://lh3.googleusercontent.com/d/1Qbuy2e-VSuUaoz_9haE-GgZeChFbM_AM"
+        }
+      ],
+      "originalCategory": "Quadrinhos Personalizados"
+    },
+    {
+      "name": "O Melhor de Nós",
+      "price": 19.9,
+      "coverImage": "",
+      "images": [
+        {
+          "name": "O Melhor de Nós - Branco",
+          "url": "https://lh3.googleusercontent.com/d/1ONVPN3fcKAoVsPtGKpnH8iBgrlBRuTyt"
+        },
+        {
+          "name": "O Melhor de Nós - Preto",
+          "url": "https://lh3.googleusercontent.com/d/1CXe3ePXCUwR_TsI7uVCgwVtzZOZ5p32G"
+        }
+      ],
+      "originalCategory": "Quadrinhos Personalizados"
+    },
+    {
+      "name": "Nosso Amor",
+      "price": 19.9,
+      "coverImage": "",
+      "images": [
+        {
+          "name": "Nosso Amor - Branco",
+          "url": "https://lh3.googleusercontent.com/d/1okl5MnBmgnUA-JgOfId_Zo__KbB8oazr"
+        },
+        {
+          "name": "Nosso Amor - Preto e Branco",
+          "url": "https://lh3.googleusercontent.com/d/1tWitsqGxIDaZG2BuU5UfETzfdpmbiaoV"
+        },
+        {
+          "name": "Nosso Amor - Preto",
+          "url": "https://lh3.googleusercontent.com/d/1hQ1nfDamKjCB1Vj5OzgTx9MdY1wqiN8r"
+        }
+      ],
+      "originalCategory": "Quadrinhos Personalizados"
+    },
+    {
+      "name": "A Nossa História",
+      "price": 19.9,
+      "coverImage": "",
+      "images": [
+        {
+          "name": "A Nossa História - Branco",
+          "url": "https://lh3.googleusercontent.com/d/1wy9XwkK0Iso4ak0LVCiPNkrUOjJORrXb"
+        },
+        {
+          "name": "A Nossa História - Branco e Preto",
+          "url": "https://lh3.googleusercontent.com/d/1tGFdpDnQi6nGeSz43k18DtwhexdRr7G1"
+        },
+        {
+          "name": "A Nossa História - Preto",
+          "url": "https://lh3.googleusercontent.com/d/1o5Uj9-TBi_61crd8hDtc9sYvNBgniPTv"
+        }
+      ],
+      "originalCategory": "Quadrinhos Personalizados"
+    },
+    {
+      "name": "Baralho do Amor",
+      "price": 44.9,
+      "coverImage": "",
+      "images": [],
+      "originalCategory": "Outros"
+    },
+    {
+      "name": "Chaveiro Spotify",
+      "price": 7.9,
+      "coverImage": "",
+      "images": [],
+      "originalCategory": "Outros"
+    }
+  ],
   "catalog": [
     {
       "categoryTitle": "Fotos",
@@ -73,7 +264,7 @@
         },
         {
           "name": "Tirinha de Fotos",
-          "price": 3.5,
+          "price": 3.9,
           "coverImage": "",
           "images": [
             {
@@ -100,7 +291,7 @@
           "coverImage": "",
           "images": [
             {
-              "name": "capa",
+              "name": "1 Unidade",
               "url": "https://lh3.googleusercontent.com/d/1BLBZLHYUvPdt0LzkmusGdaF8nmDdr2Nd"
             },
             {
@@ -119,11 +310,11 @@
         },
         {
           "name": "Polaroids M",
-          "price": 1.2,
+          "price": 1.4,
           "coverImage": "",
           "images": [
             {
-              "name": "capa",
+              "name": "1 Unidade",
               "url": "https://lh3.googleusercontent.com/d/1adRQBrPTu-KmJjkeW99LljyNc4dc8c3b"
             },
             {
@@ -146,7 +337,7 @@
           "coverImage": "",
           "images": [
             {
-              "name": "capa",
+              "name": "1 Unidade",
               "url": "https://lh3.googleusercontent.com/d/1Ft-PpmxpdFOvkl3STpHUyo6hnKEc2oSx"
             },
             {
@@ -307,45 +498,19 @@
       ]
     },
     {
-      "categoryTitle": "Figurinhas",
+      "categoryTitle": "Outros",
       "items": [
         {
-          "name": "Figurinhas_2",
-          "price": 9.9,
+          "name": "Baralho do Amor",
+          "price": 44.9,
           "coverImage": "",
-          "images": [
-            {
-              "name": "download.jpeg",
-              "url": "https://lh3.googleusercontent.com/d/1byYQE9sls740Ug20NqRmqEFQVTZXXo8s"
-            },
-            {
-              "name": "download (1).jpeg",
-              "url": "https://lh3.googleusercontent.com/d/1S3TBwn7wzAowrRoBfeeX0fn3g-f8slQL"
-            },
-            {
-              "name": "download (4).jpeg",
-              "url": "https://lh3.googleusercontent.com/d/1Y7d5-xEeT0oWULZ7qNTuLpYyoLZgqPfl"
-            }
-          ]
+          "images": []
         },
         {
-          "name": "Figurinhas_1",
-          "price": 249.9,
+          "name": "Chaveiro Spotify",
+          "price": 7.9,
           "coverImage": "",
-          "images": [
-            {
-              "name": "download (1).jpeg",
-              "url": "https://lh3.googleusercontent.com/d/1CGhqu1y-ZfuRnF9A8p-UFZK4DjtBG8W0"
-            },
-            {
-              "name": "download (2).jpeg",
-              "url": "https://lh3.googleusercontent.com/d/12fBnELf6r_p1S71Hv6xZCTd5Xew219O4"
-            },
-            {
-              "name": "download (3).jpeg",
-              "url": "https://lh3.googleusercontent.com/d/15dq-FKiVTBh730SZXv0udzNMW-SEuXdI"
-            }
-          ]
+          "images": []
         }
       ]
     }
