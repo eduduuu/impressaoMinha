@@ -19,6 +19,34 @@
   ],
   "featuredThemeProducts": [
     {
+      "name": "Baralho do Amor",
+      "price": [
+        44.9
+      ],
+      "coverImage": "",
+      "images": [
+        {
+          "name": "Baralho do Amor",
+          "url": "https://lh3.googleusercontent.com/d/19-zFLPWoNzP8Z9LxQl0dk84KrI7Y5S6c"
+        }
+      ],
+      "originalCategory": "Outros"
+    },
+    {
+      "name": "Chaveiro Spotify",
+      "price": [
+        7.9
+      ],
+      "coverImage": "",
+      "images": [
+        {
+          "name": "Chaveiro Spotify",
+          "url": "https://lh3.googleusercontent.com/d/1JCYDjFCou_iE-o7jZ8ZhKoq58oAt-JC1"
+        }
+      ],
+      "originalCategory": "Outros"
+    },
+    {
       "name": "Tirinha de Fotos Estilo Filme",
       "price": [
         4.5
@@ -213,34 +241,6 @@
         }
       ],
       "originalCategory": "Quadrinhos Personalizados"
-    },
-    {
-      "name": "Baralho do Amor",
-      "price": [
-        44.9
-      ],
-      "coverImage": "",
-      "images": [
-        {
-          "name": "Baralho do Amor",
-          "url": "https://lh3.googleusercontent.com/d/19-zFLPWoNzP8Z9LxQl0dk84KrI7Y5S6c"
-        }
-      ],
-      "originalCategory": "Outros"
-    },
-    {
-      "name": "Chaveiro Spotify",
-      "price": [
-        7.9
-      ],
-      "coverImage": "",
-      "images": [
-        {
-          "name": "Chaveiro Spotify",
-          "url": "https://lh3.googleusercontent.com/d/1JCYDjFCou_iE-o7jZ8ZhKoq58oAt-JC1"
-        }
-      ],
-      "originalCategory": "Outros"
     }
   ],
   "catalog": [
@@ -361,7 +361,10 @@
         {
           "name": "Polaroids G",
           "price": [
-            1.9
+            1.9,
+            19.9,
+            27.9,
+            34.9
           ],
           "coverImage": "",
           "images": [
@@ -386,7 +389,10 @@
         {
           "name": "Polaroids M",
           "price": [
-            1.4
+            1.4,
+            14.9,
+            24.9,
+            29.9
           ],
           "coverImage": "",
           "images": [
@@ -411,7 +417,10 @@
         {
           "name": "Polaroids P",
           "price": [
-            0.9
+            0.9,
+            9.9,
+            18.9,
+            24.9
           ],
           "coverImage": "",
           "images": [
