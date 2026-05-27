@@ -458,26 +458,16 @@
                 </div>
             </div>
 
-            <h2 class="h5 fw-bold mb-3" style="color: var(--text-dark);" id="featuredTitle">Destaques do Mês 💝</h2>
+            <h2 class="h5 fw-bold mb-3" style="color: var(--text-dark);" id="featuredTitle">Coleção Dia dos Namorados 💝</h2>
             
             <div class="row g-3 mb-4">
-                <div class="col-12 col-lg-6">
+                <div class="col-12">
                     <div class="amazon-box h-100">
                         <div class="amazon-box-header" id="featuredBoxHeader1">
                             <h3 class="amazon-box-title" id="featuredBoxTitle1">Carregando...</h3>
                             <span class="ver-mais-link">Ver Mais</span>
                         </div>
-                        <div class="amazon-products-4grid" id="featured-box-1"></div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-6">
-                    <div class="amazon-box h-100">
-                        <div class="amazon-box-header" id="featuredBoxHeader2">
-                            <h3 class="amazon-box-title" id="featuredBoxTitle2">Carregando...</h3>
-                            <span class="ver-mais-link">Ver Mais</span>
-                        </div>
-                        <div class="amazon-products-4grid" id="featured-box-2"></div>
+                        <div class="amazon-products-4grid" id="featured-box-1" style="grid-template-columns: repeat(2, 1fr);"></div>
                     </div>
                 </div>
             </div>
@@ -621,7 +611,7 @@
                 
                 setupHeroSection(t);
 
-                document.getElementById('featuredTitle').innerText = `Especial ${t} 💝`;
+                document.getElementById('featuredTitle').innerText = `Coleção ${t} 💝`;
                 document.getElementById('welcomeModalTitle').innerText = `Especial ${t}!`;
                 document.getElementById('welcomeModalText').innerText = `Confira nossa coleção exclusiva de produtos de ${t} para surpreender quem você ama!`;
                 
@@ -669,7 +659,6 @@
             }
         }
 
-        // Função utilitária para pegar o preço formatado com base no índice (ou o padrão se não houver variação de valor correspondente)
         function getProductPriceString(product, index = 0) {
             let priceVal = 0;
             if (Array.isArray(product.price)) {
@@ -682,14 +671,12 @@
 
         function buildCataloguePage() {
             const box1Container = document.getElementById('featured-box-1');
-            const box2Container = document.getElementById('featured-box-2');
             const rowContainer = document.getElementById('categoryContainer');
 
-            box1Container.innerHTML = ''; box2Container.innerHTML = ''; rowContainer.innerHTML = '';
+            box1Container.innerHTML = ''; rowContainer.innerHTML = '';
 
             const t = database.themeTitle || "Namorados";
             const boxTitle1 = `Coleção ${t}`;
-            let boxTitle2 = "Queridinhos da Papelaria";
             
             document.getElementById('featuredBoxTitle1').innerText = boxTitle1;
             document.getElementById('featuredBoxHeader1').onclick = () => switchCategoryView(boxTitle1, database.featuredThemeProducts);
@@ -698,21 +685,24 @@
                 box1Container.appendChild(createMiniCard(p, boxTitle1));
             });
 
-            if (database.catalog && database.catalog.length > 0) {
-                boxTitle2 = database.catalog[0].categoryTitle;
-                database.catalog[0].items.slice(0, 4).forEach(p => {
-                    box2Container.appendChild(createMiniCard(p, boxTitle2));
-                });
-            }
-            document.getElementById('featuredBoxTitle2').innerText = boxTitle2;
-            document.getElementById('featuredBoxHeader2').onclick = () => {
-                if (database.catalog && database.catalog.length > 0) {
-                    switchCategoryView(database.catalog[0].categoryTitle, database.catalog[0].items);
-                }
-            };
-
             if (database.catalog) {
+                const targetOrder = ["Quadrinhos Personalizados", "Fotos", "Outros"];
+                const sortedCatalog = [];
+                
+                targetOrder.forEach(title => {
+                    const foundCategory = database.catalog.find(c => c.categoryTitle.trim() === title);
+                    if (foundCategory) {
+                        sortedCatalog.push(foundCategory);
+                    }
+                });
+                
                 database.catalog.forEach(catGroup => {
+                    if (!targetOrder.includes(catGroup.categoryTitle.trim())) {
+                        sortedCatalog.push(catGroup);
+                    }
+                });
+
+                sortedCatalog.forEach(catGroup => {
                     const cat = catGroup.categoryTitle;
                     const section = document.createElement('section');
                     section.className = 'category-section';
@@ -814,7 +804,7 @@
         let selectedProduct = null;
         let selectedCategoryContext = "";
         let selectedVarObj = null;
-        let selectedVarIdx = 0; // Controla o index da variação selecionada
+        let selectedVarIdx = 0; 
 
         function openProductDetails(product, categoryContextName) {
             selectedProduct = product;
@@ -845,7 +835,7 @@
                     document.querySelectorAll('.variation-badge').forEach(b => b.classList.remove('selected'));
                     badge.classList.add('selected');
                     selectedVarObj = variantObj;
-                    selectedVarIdx = idx; // Vincula o index do clique ao preço correto
+                    selectedVarIdx = idx; 
                     
                     document.getElementById('modalPrice').innerText = getProductPriceString(product, idx);
                     renderModalImage(selectedVarObj.url, selectedVarObj.name);
