@@ -47,18 +47,22 @@
       "originalCategory": "Outros"
     },
     {
-      "name": "Tirinha de Fotos Estilo Filme",
+      "name": "O Melhor de Nós",
       "price": [
-        4.5
+        19.9
       ],
       "coverImage": "",
       "images": [
         {
-          "name": "3 Unidades",
-          "url": "https://lh3.googleusercontent.com/d/1m45OeFm2BSEcwKEAi6VI1dtqTOkW6RlP"
+          "name": "O Melhor de Nós - Branco",
+          "url": "https://lh3.googleusercontent.com/d/1ONVPN3fcKAoVsPtGKpnH8iBgrlBRuTyt"
+        },
+        {
+          "name": "O Melhor de Nós - Preto",
+          "url": "https://lh3.googleusercontent.com/d/1CXe3ePXCUwR_TsI7uVCgwVtzZOZ5p32G"
         }
       ],
-      "originalCategory": "Fotos"
+      "originalCategory": "Quadrinhos Personalizados"
     },
     {
       "name": "Tirinha de Fotos Vintage",
@@ -79,59 +83,63 @@
       "originalCategory": "Fotos"
     },
     {
-      "name": "Tirinha de Fotos Temática",
-      "price": [
-        4.5
-      ],
-      "coverImage": "",
-      "images": [
-        {
-          "name": "Branco, Preto e Vermelho",
-          "url": "https://lh3.googleusercontent.com/d/1yWFbqEr1D88tsdEFZz5IUPEhhaRvB-a_"
-        },
-        {
-          "name": "Branco",
-          "url": "https://lh3.googleusercontent.com/d/1D_5ApgnVoVTPEXmbuhYXt2NpBjWUx-7B"
-        },
-        {
-          "name": "Preto",
-          "url": "https://lh3.googleusercontent.com/d/1ytM6YqBGogiwhJePL8IpO9CEV8r657bj"
-        },
-        {
-          "name": "Vermelho",
-          "url": "https://lh3.googleusercontent.com/d/1FX_l96Yw7y8kORQayewm4m0jwyBYjanu"
-        }
-      ],
-      "originalCategory": "Fotos"
-    },
-    {
-      "name": "Nosso Cantinho",
+      "name": "Spotify",
       "price": [
         19.9
       ],
       "coverImage": "",
       "images": [
         {
-          "name": "Nosso Cantinho - Cinza",
-          "url": "https://lh3.googleusercontent.com/d/1E1p-Ai_ikZX195ICCXhpfvWwmhOP3VLe"
+          "name": "Spotify - Branco",
+          "url": "https://lh3.googleusercontent.com/d/11Lhrcp8Wu-v4apCYfMsfBrj9_ZOKE2YK"
+        },
+        {
+          "name": "Spotify - Preto",
+          "url": "https://lh3.googleusercontent.com/d/1Qbuy2e-VSuUaoz_9haE-GgZeChFbM_AM"
         }
       ],
       "originalCategory": "Quadrinhos Personalizados"
     },
     {
-      "name": "Meu Lugar Favorito",
+      "name": "A Nossa História",
       "price": [
         19.9
       ],
       "coverImage": "",
       "images": [
         {
-          "name": "Meu Lugar Favorito - Branco",
-          "url": "https://lh3.googleusercontent.com/d/1rQTV5TEUcCH6TVhZPgMN48-OtIEweFiQ"
+          "name": "A Nossa História - Branco",
+          "url": "https://lh3.googleusercontent.com/d/1wy9XwkK0Iso4ak0LVCiPNkrUOjJORrXb"
         },
         {
-          "name": "Meu Lugar Favorito - Preto",
-          "url": "https://lh3.googleusercontent.com/d/1ohOOd1VPiIvuRXvKkgZ0q9AgXZyzfiX_"
+          "name": "A Nossa História - Branco e Preto",
+          "url": "https://lh3.googleusercontent.com/d/1tGFdpDnQi6nGeSz43k18DtwhexdRr7G1"
+        },
+        {
+          "name": "A Nossa História - Preto",
+          "url": "https://lh3.googleusercontent.com/d/1o5Uj9-TBi_61crd8hDtc9sYvNBgniPTv"
+        }
+      ],
+      "originalCategory": "Quadrinhos Personalizados"
+    },
+    {
+      "name": "Nosso Amor",
+      "price": [
+        19.9
+      ],
+      "coverImage": "",
+      "images": [
+        {
+          "name": "Nosso Amor - Branco",
+          "url": "https://lh3.googleusercontent.com/d/1okl5MnBmgnUA-JgOfId_Zo__KbB8oazr"
+        },
+        {
+          "name": "Nosso Amor - Preto e Branco",
+          "url": "https://lh3.googleusercontent.com/d/1tWitsqGxIDaZG2BuU5UfETzfdpmbiaoV"
+        },
+        {
+          "name": "Nosso Amor - Preto",
+          "url": "https://lh3.googleusercontent.com/d/1hQ1nfDamKjCB1Vj5OzgTx9MdY1wqiN8r"
         }
       ],
       "originalCategory": "Quadrinhos Personalizados"
@@ -163,84 +171,76 @@
       "originalCategory": "Quadrinhos Personalizados"
     },
     {
-      "name": "Spotify",
+      "name": "Meu Lugar Favorito",
       "price": [
         19.9
       ],
       "coverImage": "",
       "images": [
         {
-          "name": "Spotify - Branco",
-          "url": "https://lh3.googleusercontent.com/d/11Lhrcp8Wu-v4apCYfMsfBrj9_ZOKE2YK"
+          "name": "Meu Lugar Favorito - Branco",
+          "url": "https://lh3.googleusercontent.com/d/1rQTV5TEUcCH6TVhZPgMN48-OtIEweFiQ"
         },
         {
-          "name": "Spotify - Preto",
-          "url": "https://lh3.googleusercontent.com/d/1Qbuy2e-VSuUaoz_9haE-GgZeChFbM_AM"
+          "name": "Meu Lugar Favorito - Preto",
+          "url": "https://lh3.googleusercontent.com/d/1ohOOd1VPiIvuRXvKkgZ0q9AgXZyzfiX_"
         }
       ],
       "originalCategory": "Quadrinhos Personalizados"
     },
     {
-      "name": "O Melhor de Nós",
+      "name": "Nosso Cantinho",
       "price": [
         19.9
       ],
       "coverImage": "",
       "images": [
         {
-          "name": "O Melhor de Nós - Branco",
-          "url": "https://lh3.googleusercontent.com/d/1ONVPN3fcKAoVsPtGKpnH8iBgrlBRuTyt"
-        },
-        {
-          "name": "O Melhor de Nós - Preto",
-          "url": "https://lh3.googleusercontent.com/d/1CXe3ePXCUwR_TsI7uVCgwVtzZOZ5p32G"
+          "name": "Nosso Cantinho - Cinza",
+          "url": "https://lh3.googleusercontent.com/d/1E1p-Ai_ikZX195ICCXhpfvWwmhOP3VLe"
         }
       ],
       "originalCategory": "Quadrinhos Personalizados"
     },
     {
-      "name": "Nosso Amor",
+      "name": "Tirinha de Fotos Estilo Filme",
       "price": [
-        19.9
+        4.5
       ],
       "coverImage": "",
       "images": [
         {
-          "name": "Nosso Amor - Branco",
-          "url": "https://lh3.googleusercontent.com/d/1okl5MnBmgnUA-JgOfId_Zo__KbB8oazr"
-        },
-        {
-          "name": "Nosso Amor - Preto e Branco",
-          "url": "https://lh3.googleusercontent.com/d/1tWitsqGxIDaZG2BuU5UfETzfdpmbiaoV"
-        },
-        {
-          "name": "Nosso Amor - Preto",
-          "url": "https://lh3.googleusercontent.com/d/1hQ1nfDamKjCB1Vj5OzgTx9MdY1wqiN8r"
+          "name": "3 Unidades",
+          "url": "https://lh3.googleusercontent.com/d/1m45OeFm2BSEcwKEAi6VI1dtqTOkW6RlP"
         }
       ],
-      "originalCategory": "Quadrinhos Personalizados"
+      "originalCategory": "Fotos"
     },
     {
-      "name": "A Nossa História",
+      "name": "Tirinha de Fotos Temática",
       "price": [
-        19.9
+        4.5
       ],
       "coverImage": "",
       "images": [
         {
-          "name": "A Nossa História - Branco",
-          "url": "https://lh3.googleusercontent.com/d/1wy9XwkK0Iso4ak0LVCiPNkrUOjJORrXb"
+          "name": "Branco, Preto e Vermelho",
+          "url": "https://lh3.googleusercontent.com/d/1yWFbqEr1D88tsdEFZz5IUPEhhaRvB-a_"
         },
         {
-          "name": "A Nossa História - Branco e Preto",
-          "url": "https://lh3.googleusercontent.com/d/1tGFdpDnQi6nGeSz43k18DtwhexdRr7G1"
+          "name": "Branco",
+          "url": "https://lh3.googleusercontent.com/d/1D_5ApgnVoVTPEXmbuhYXt2NpBjWUx-7B"
         },
         {
-          "name": "A Nossa História - Preto",
-          "url": "https://lh3.googleusercontent.com/d/1o5Uj9-TBi_61crd8hDtc9sYvNBgniPTv"
+          "name": "Preto",
+          "url": "https://lh3.googleusercontent.com/d/1ytM6YqBGogiwhJePL8IpO9CEV8r657bj"
+        },
+        {
+          "name": "Vermelho",
+          "url": "https://lh3.googleusercontent.com/d/1FX_l96Yw7y8kORQayewm4m0jwyBYjanu"
         }
       ],
-      "originalCategory": "Quadrinhos Personalizados"
+      "originalCategory": "Fotos"
     }
   ],
   "catalog": [
@@ -276,21 +276,144 @@
       ]
     },
     {
-      "categoryTitle": "Fotos",
+      "categoryTitle": "Quadrinhos Personalizados",
       "items": [
         {
-          "name": "Tirinha de Fotos Estilo Filme",
+          "name": "O Melhor de Nós",
           "price": [
-            4.5
+            19.9
           ],
           "coverImage": "",
           "images": [
             {
-              "name": "3 Unidades",
-              "url": "https://lh3.googleusercontent.com/d/1m45OeFm2BSEcwKEAi6VI1dtqTOkW6RlP"
+              "name": "O Melhor de Nós - Branco",
+              "url": "https://lh3.googleusercontent.com/d/1ONVPN3fcKAoVsPtGKpnH8iBgrlBRuTyt"
+            },
+            {
+              "name": "O Melhor de Nós - Preto",
+              "url": "https://lh3.googleusercontent.com/d/1CXe3ePXCUwR_TsI7uVCgwVtzZOZ5p32G"
             }
           ]
         },
+        {
+          "name": "Spotify",
+          "price": [
+            19.9
+          ],
+          "coverImage": "",
+          "images": [
+            {
+              "name": "Spotify - Branco",
+              "url": "https://lh3.googleusercontent.com/d/11Lhrcp8Wu-v4apCYfMsfBrj9_ZOKE2YK"
+            },
+            {
+              "name": "Spotify - Preto",
+              "url": "https://lh3.googleusercontent.com/d/1Qbuy2e-VSuUaoz_9haE-GgZeChFbM_AM"
+            }
+          ]
+        },
+        {
+          "name": "A Nossa História",
+          "price": [
+            19.9
+          ],
+          "coverImage": "",
+          "images": [
+            {
+              "name": "A Nossa História - Branco",
+              "url": "https://lh3.googleusercontent.com/d/1wy9XwkK0Iso4ak0LVCiPNkrUOjJORrXb"
+            },
+            {
+              "name": "A Nossa História - Branco e Preto",
+              "url": "https://lh3.googleusercontent.com/d/1tGFdpDnQi6nGeSz43k18DtwhexdRr7G1"
+            },
+            {
+              "name": "A Nossa História - Preto",
+              "url": "https://lh3.googleusercontent.com/d/1o5Uj9-TBi_61crd8hDtc9sYvNBgniPTv"
+            }
+          ]
+        },
+        {
+          "name": "Nosso Amor",
+          "price": [
+            19.9
+          ],
+          "coverImage": "",
+          "images": [
+            {
+              "name": "Nosso Amor - Branco",
+              "url": "https://lh3.googleusercontent.com/d/1okl5MnBmgnUA-JgOfId_Zo__KbB8oazr"
+            },
+            {
+              "name": "Nosso Amor - Preto e Branco",
+              "url": "https://lh3.googleusercontent.com/d/1tWitsqGxIDaZG2BuU5UfETzfdpmbiaoV"
+            },
+            {
+              "name": "Nosso Amor - Preto",
+              "url": "https://lh3.googleusercontent.com/d/1hQ1nfDamKjCB1Vj5OzgTx9MdY1wqiN8r"
+            }
+          ]
+        },
+        {
+          "name": "Spotify - 4 Fotos",
+          "price": [
+            19.9
+          ],
+          "coverImage": "",
+          "images": [
+            {
+              "name": "Spotify - Preto",
+              "url": "https://lh3.googleusercontent.com/d/1aU7Jq9CtH6sLq2qky41kBpdGXsj7VcZl"
+            },
+            {
+              "name": "Spotify - Preto e Branco",
+              "url": "https://lh3.googleusercontent.com/d/1XFFBuEDTe7jyQ98YKQbrVuGcf9Num2Cs"
+            },
+            {
+              "name": "Spotify - Branco",
+              "url": "https://lh3.googleusercontent.com/d/1ZhJT5eAxvLaCPQEedto0h9idtaV26pS8"
+            },
+            {
+              "name": "Spotify - Branco e Preto",
+              "url": "https://lh3.googleusercontent.com/d/1z6IWIJzKv68qCacND8kYOHrczQ2Hnj0w"
+            }
+          ]
+        },
+        {
+          "name": "Meu Lugar Favorito",
+          "price": [
+            19.9
+          ],
+          "coverImage": "",
+          "images": [
+            {
+              "name": "Meu Lugar Favorito - Branco",
+              "url": "https://lh3.googleusercontent.com/d/1rQTV5TEUcCH6TVhZPgMN48-OtIEweFiQ"
+            },
+            {
+              "name": "Meu Lugar Favorito - Preto",
+              "url": "https://lh3.googleusercontent.com/d/1ohOOd1VPiIvuRXvKkgZ0q9AgXZyzfiX_"
+            }
+          ]
+        },
+        {
+          "name": "Nosso Cantinho",
+          "price": [
+            19.9
+          ],
+          "coverImage": "",
+          "images": [
+            {
+              "name": "Nosso Cantinho - Cinza",
+              "url": "https://lh3.googleusercontent.com/d/1E1p-Ai_ikZX195ICCXhpfvWwmhOP3VLe"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryTitle": "Fotos",
+      "items": [
         {
           "name": "Tirinha de Fotos Vintage",
           "price": [
@@ -305,6 +428,19 @@
             {
               "name": "Branco",
               "url": "https://lh3.googleusercontent.com/d/1QcFeSx6lowFjj9YJwrYjCEVKLbmnQlDH"
+            }
+          ]
+        },
+        {
+          "name": "Tirinha de Fotos Estilo Filme",
+          "price": [
+            4.5
+          ],
+          "coverImage": "",
+          "images": [
+            {
+              "name": "3 Unidades",
+              "url": "https://lh3.googleusercontent.com/d/1m45OeFm2BSEcwKEAi6VI1dtqTOkW6RlP"
             }
           ]
         },
@@ -462,142 +598,6 @@
             {
               "name": "100 Unidades - 3",
               "url": "https://lh3.googleusercontent.com/d/19hp4saF5K1v-qZVxezwStO2jigLi0nY0"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "categoryTitle": "Quadrinhos Personalizados",
-      "items": [
-        {
-          "name": "Nosso Cantinho",
-          "price": [
-            19.9
-          ],
-          "coverImage": "",
-          "images": [
-            {
-              "name": "Nosso Cantinho - Cinza",
-              "url": "https://lh3.googleusercontent.com/d/1E1p-Ai_ikZX195ICCXhpfvWwmhOP3VLe"
-            }
-          ]
-        },
-        {
-          "name": "Meu Lugar Favorito",
-          "price": [
-            19.9
-          ],
-          "coverImage": "",
-          "images": [
-            {
-              "name": "Meu Lugar Favorito - Branco",
-              "url": "https://lh3.googleusercontent.com/d/1rQTV5TEUcCH6TVhZPgMN48-OtIEweFiQ"
-            },
-            {
-              "name": "Meu Lugar Favorito - Preto",
-              "url": "https://lh3.googleusercontent.com/d/1ohOOd1VPiIvuRXvKkgZ0q9AgXZyzfiX_"
-            }
-          ]
-        },
-        {
-          "name": "Spotify - 4 Fotos",
-          "price": [
-            19.9
-          ],
-          "coverImage": "",
-          "images": [
-            {
-              "name": "Spotify - Preto",
-              "url": "https://lh3.googleusercontent.com/d/1aU7Jq9CtH6sLq2qky41kBpdGXsj7VcZl"
-            },
-            {
-              "name": "Spotify - Preto e Branco",
-              "url": "https://lh3.googleusercontent.com/d/1XFFBuEDTe7jyQ98YKQbrVuGcf9Num2Cs"
-            },
-            {
-              "name": "Spotify - Branco",
-              "url": "https://lh3.googleusercontent.com/d/1ZhJT5eAxvLaCPQEedto0h9idtaV26pS8"
-            },
-            {
-              "name": "Spotify - Branco e Preto",
-              "url": "https://lh3.googleusercontent.com/d/1z6IWIJzKv68qCacND8kYOHrczQ2Hnj0w"
-            }
-          ]
-        },
-        {
-          "name": "Spotify",
-          "price": [
-            19.9
-          ],
-          "coverImage": "",
-          "images": [
-            {
-              "name": "Spotify - Branco",
-              "url": "https://lh3.googleusercontent.com/d/11Lhrcp8Wu-v4apCYfMsfBrj9_ZOKE2YK"
-            },
-            {
-              "name": "Spotify - Preto",
-              "url": "https://lh3.googleusercontent.com/d/1Qbuy2e-VSuUaoz_9haE-GgZeChFbM_AM"
-            }
-          ]
-        },
-        {
-          "name": "O Melhor de Nós",
-          "price": [
-            19.9
-          ],
-          "coverImage": "",
-          "images": [
-            {
-              "name": "O Melhor de Nós - Branco",
-              "url": "https://lh3.googleusercontent.com/d/1ONVPN3fcKAoVsPtGKpnH8iBgrlBRuTyt"
-            },
-            {
-              "name": "O Melhor de Nós - Preto",
-              "url": "https://lh3.googleusercontent.com/d/1CXe3ePXCUwR_TsI7uVCgwVtzZOZ5p32G"
-            }
-          ]
-        },
-        {
-          "name": "Nosso Amor",
-          "price": [
-            19.9
-          ],
-          "coverImage": "",
-          "images": [
-            {
-              "name": "Nosso Amor - Branco",
-              "url": "https://lh3.googleusercontent.com/d/1okl5MnBmgnUA-JgOfId_Zo__KbB8oazr"
-            },
-            {
-              "name": "Nosso Amor - Preto e Branco",
-              "url": "https://lh3.googleusercontent.com/d/1tWitsqGxIDaZG2BuU5UfETzfdpmbiaoV"
-            },
-            {
-              "name": "Nosso Amor - Preto",
-              "url": "https://lh3.googleusercontent.com/d/1hQ1nfDamKjCB1Vj5OzgTx9MdY1wqiN8r"
-            }
-          ]
-        },
-        {
-          "name": "A Nossa História",
-          "price": [
-            19.9
-          ],
-          "coverImage": "",
-          "images": [
-            {
-              "name": "A Nossa História - Branco",
-              "url": "https://lh3.googleusercontent.com/d/1wy9XwkK0Iso4ak0LVCiPNkrUOjJORrXb"
-            },
-            {
-              "name": "A Nossa História - Branco e Preto",
-              "url": "https://lh3.googleusercontent.com/d/1tGFdpDnQi6nGeSz43k18DtwhexdRr7G1"
-            },
-            {
-              "name": "A Nossa História - Preto",
-              "url": "https://lh3.googleusercontent.com/d/1o5Uj9-TBi_61crd8hDtc9sYvNBgniPTv"
             }
           ]
         }
