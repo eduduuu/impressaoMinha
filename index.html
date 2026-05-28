@@ -425,6 +425,15 @@
             .sticky-footer { display: none; }
         }
     </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FMBE9ZE9M5"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FMBE9ZE9M5');
+    </script>
 </head>
 <body>
 
@@ -807,6 +816,12 @@
         let selectedVarIdx = 0; 
 
         function openProductDetails(product, categoryContextName) {
+            if (typeof gtag === 'function') {
+                gtag('event', 'visualizar_produto', {
+                    'nome_produto': product.name,
+                    'categoria': categoryContextName
+                });
+            }
             selectedProduct = product;
             selectedCategoryContext = categoryContextName;
             selectedVarIdx = 0;
