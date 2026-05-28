@@ -817,6 +817,7 @@
 
         function openProductDetails(product, categoryContextName) {
             if (typeof gtag === 'function') {
+                console.log("visualizando produto")
                 gtag('event', 'visualizar_produto', {
                     'nome_produto': product.name,
                     'categoria': categoryContextName
